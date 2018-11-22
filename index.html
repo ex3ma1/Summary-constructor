@@ -3,11 +3,13 @@
 <title>W3.CSS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<script src="genPDF.js" ></script>
-<script src="script.js"></script>
-<script src="jspdf.min.js" type="text/javascript"></script>
-<script src="html2canvas.js" type="text/javascript"></script>
-<script src="openCity.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/genPDF.js" ></script>
+<script src="js/script.js"></script>
+<script src="js/jspdf.min.js" type="text/javascript"></script>
+<script src="js/html2canvas.js" type="text/javascript"></script>
+<script src="js/openCity.js"></script>
+<script src="js/image.js"></script>
 
 
 <body>
@@ -32,8 +34,16 @@
 
 <div id="Paris" class="w3-container city" style="display:none">
   <h2>Paris</h2>
-  <input type="text" id="name4">
-  <input type="button" value="Проверить" class="btn" onclick="show()">
+  <input type="text" id="name4"> <br>
+
+   <div class="upload-btn-wrapper">
+
+  <button class="btn-1">Upload a file</button>
+  <input id="browse" type="file" onchange="previewFiles()" multiple>
+<div id="preview"></div>
+  </div> <br>
+ 
+  <input type="button" value="Проверить" class="btn" onclick="show()">  <br>
 </div>
 
 <div id="Tokyo" class="w3-container city" style="display:none">

@@ -14,6 +14,7 @@ function previewFiles() {
         image.height = 100;
         image.title = file.name;
         image.src = this.result;
+        image.id = 'ava';
         preview.appendChild( image );
       }, false);
 

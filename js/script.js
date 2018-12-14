@@ -3,10 +3,11 @@
 function show(){
     selectTemplate();
     console.log('1');
-    var text = document.getElementById("name").value;
-    var text1 = document.getElementById("name1").value;
-    var text2 = document.getElementById("name2").value;
-    var text3 = document.getElementById("name4").value;
+    var name = document.getElementById("name").value;
+    var surname = document.getElementById("surname").value;
+    var tel = document.getElementById("tel").value;
+    var aboutme = document.getElementById("aboutme").value;
+    var text = document.getElementById("name4").value;
     console.log('2');
 
     var form = document.getElementById("raz");
@@ -15,7 +16,7 @@ function show(){
     previewAva(template_id);
     console.log('3');
 
-    var block = document.getElementById(template_id).innerHTML=text+'<br>'+text1+'<br>'+text2+'<br>'+text3+'<br>';
+    var block = document.getElementById(template_id).innerHTML=name+'<br>'+surname+'<br>'+tel+'<br>'+aboutme+'<br>'+text+'<br>';
     
 }
 

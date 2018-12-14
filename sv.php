@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS</title>
+<title>Summary-constructor</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="css/style.css">
 <script src="js/genPDF.js" ></script>
@@ -16,17 +17,17 @@
 
 
 <div class="w3-bar w3-black">
-  <button class="w3-bar-item w3-button" onclick="openCity('template')">Templates</button>
-  <button class="w3-bar-item w3-button" onclick="openCity('London')">London</button>
-  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Paris</button>
+  <button class="w3-bar-item w3-button" onclick="Tabs('template')">Templates</button>
+  <button class="w3-bar-item w3-button" onclick="Tabs('main-info')">Общая Инфа</button>
+  <button class="w3-bar-item w3-button" onclick="Tabs('education')">Образование</button>
   
 
-  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Tokyo</button>
+  <button class="w3-bar-item w3-button" onclick="Tabs('previews')">Превью</button>
 
-  <a class="w3-bar-item w3-button" href="logout.php">Log out</a>
+  
 </div>
 
-<div id="template" class="w3-container city" >
+<div id="template" class="w3-container Tab" >
   <h2>Templates</h2>
   <div>
   <form id='raz'>
@@ -53,7 +54,7 @@
 
 </div>
 
-<div id="London" class="w3-container city" style="display:none">
+<div id="main-info" class="w3-container Tab" style="display:none">
   <h2>London</h2>
   <div>
       <input type="text" id="name">
@@ -64,7 +65,7 @@
 
 </div>
 
-<div id="Paris" class="w3-container city" style="display:none">
+<div id="education" class="w3-container Tab" style="display:none">
   <h2>Paris</h2>
   <input type="text" id="name4"> <br>
 
@@ -78,7 +79,7 @@
   <input type="button" value="Проверить" class="btn" onclick="show()">  <br>
 </div>
 
-<div id="Tokyo" class="w3-container city" style="display:none">
+<div id="previews" class="w3-container Tab" style="display:none">
   <div id="sv">
       <div id="Label1" style='display: none;'>
           <h2>Template 1</h2>
@@ -110,9 +111,9 @@
 </div>
 
 
+<br><br><br><br><br><br><br><br><br>
 
 
-
-
+<a class="w3-bar-item w3-button" href="logout.php">Log out</a>
 </body>
 </html>

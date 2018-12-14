@@ -1,8 +1,8 @@
-function openCity(cityName) {
+function Tabs(openTab) {
     var i;
-    var x = document.getElementsByClassName("city");
+    var x = document.getElementsByClassName("Tab");
     for (i = 0; i < x.length; i++) {
        x[i].style.display = "none";  
     }
-    document.getElementById(cityName).style.display = "block";  
+    document.getElementById(openTab).style.display = "block";  
 }

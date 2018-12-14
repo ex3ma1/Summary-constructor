@@ -28,5 +28,11 @@ max-width: 500px;
 max-height:  750px;
 border-radius: 10px;
 border: 2px;
+}
 
+.z {
+  float:right !important;
+}
+.z1 {
+   padding: 20px !important;
 }

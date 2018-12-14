@@ -17,12 +17,12 @@
 
 
 <div class="w3-bar w3-black">
-  <button class="w3-bar-item w3-button" onclick="Tabs('template')">Templates</button>
-  <button class="w3-bar-item w3-button" onclick="Tabs('main-info')">Общая Инфа</button>
-  <button class="w3-bar-item w3-button" onclick="Tabs('education')">Образование</button>
+  <button class="w3-bar-item w3-button z1" onclick="Tabs('template')">Templates</button>
+  <button class="w3-bar-item w3-button z1" onclick="Tabs('main-info')">Общая информация</button>
+  <button class="w3-bar-item w3-button z1" onclick="Tabs('education')">Образование</button>
   
 
-  <button class="w3-bar-item w3-button" onclick="Tabs('previews')">Превью</button>
+  <button class="w3-bar-item w3-button z z1" onclick="Tabs('previews')">Превью</button>
 
   
 </div>

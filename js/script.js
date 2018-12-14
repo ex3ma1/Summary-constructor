@@ -23,6 +23,8 @@
     var duties = document.getElementById("duties").value;
     var achiev = document.getElementById("achiev").value;
     var descrp = document.getElementById("descrp").value;
+    var course = document.getElementById("course").value;
+    var nameCourse = document.getElementById("nameCourse").value;
 
     
     
@@ -34,7 +36,7 @@
     previewAva(template_id);
     console.log('3');
 
-    var block = document.getElementById(template_id).innerHTML=name+'<br>'+surname+'<br>'+tel+'<br>'+date+'<br>'+position+'<br>'+aboutme+'<br>'+university+'<br>'+faculty+'<br>'+specialization+'<br>'+select+'<br>'+workPlace+'<br>'+expPos+'<br>'+duties+'<br>'+achiev+'<br>'+descrp+'<br>';
+    var block = document.getElementById(template_id).innerHTML=name+'<br>'+surname+'<br>'+tel+'<br>'+date+'<br>'+position+'<br>'+aboutme+'<br>'+university+'<br>'+faculty+'<br>'+specialization+'<br>'+select+'<br>'+workPlace+'<br>'+expPos+'<br>'+duties+'<br>'+achiev+'<br>'+descrp+'<br>'+course+'<br>'+nameCourse+'<br>';
     
 }
 

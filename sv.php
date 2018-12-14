@@ -142,6 +142,7 @@
 <div id="achievement" class="w3-container Tab" style="display:none">
   <h2>Ваши достижения</h2>
   <form class="contact_form" action="" method="post">
+    <fieldset>
    <p>
     <label for="achiev">Название награды</label>
     <input id="achiev" type="text"  name="achiev"/>
@@ -150,6 +151,17 @@
     <label for="descrp">Описание:</label>
     <input id="descrp" type="text"  name="descrp"/>
   </p>
+</fieldset>
+  <fieldset>
+  <p>
+    <label for="course">Название школы/курсов:</label> <br>
+    <input id="course" type="text"  name="course"/>
+  </p>
+  <p>
+    <label for="nameCourse">Название Курса:</label>
+    <input id="nameCourse" type="text"  name="nameCourse"/>
+  </p>
+</fieldset>
 </form>
 <input type="button" value="Проверить" class="btn" onclick="show()">  
 </div>
@@ -157,12 +169,7 @@
 
 <div id="skills" class="w3-container Tab" style="display:none">
   <h2>Навыки</h2>
-  <div>
-    <input type="text">
-    <input type="text">
-    <input type="text">
 
-  </div>
 
 </div>
 

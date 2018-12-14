@@ -6,6 +6,9 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/form.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/genPDF.js" ></script>
 <script src="js/script.js"></script>
 <script src="js/jspdf.min.js" type="text/javascript"></script>
@@ -36,7 +39,6 @@
     <div>
       <form id='raz'>
         <div>
-          <label for="radio">as</label>
           <input type="radio" checked name="raz" value="block"/> 
           <div style="background: red; width:100px; height:100px"></div>  
         </div>
@@ -45,15 +47,11 @@
           <input type="radio" checked name="raz" value="block2"/> 
           <div style="background: black; width:100px; height:100px"></div>  
         </div>
-       
+
         <div>
           <input type="radio" checked name="raz" value="block3"/> 
           <div style="background: green; width:100px; height:100px"></div>  
         </div>
-
-        
-
-
       </form>
     </div>
 
@@ -64,17 +62,25 @@
     <form class="contact_form" action="" method="post">
      <p>
       <label for="name">Имя:</label>
-      <input id="name" type="text"  name="name" placeholder="Введите ваше имя"  />
+      <input id="name" type="text"  name="name"/>
     </p>
     <p>
       <label for="email">Email:</label>
-      <input id="surname" type="email" name="email" placeholder="Введите электронный адрес"  />
+      <input id="surname" type="email" name="email"  />
     </p>
     <p>
       <label for="tel">Телефон:</label>
-      <input id="tel" type="tel" name="tel" placeholder="Введите номер телефона" />
+      <input id="tel" type="tel" name="tel" />
     </p>
-    <div class="upload-btn-wrapper">
+    <p>
+      <label for="pos">Должность:</label>
+      <input id="position" type="text"  name="pos"  />
+    </p>
+    <p>
+      <label for="text">Дата рождения:</label>
+      <input id="datepicker" type="text">
+    </p>
+    <div class="upload-btn-wrapper">  
       <button class="btn-1">Upload a file</button>
       <input id="browse" type="file" onchange="previewFiles()" multiple>
       <div id="preview"></div>
@@ -88,10 +94,32 @@
 </div>
 
 <div id="education" class="w3-container Tab" style="display:none">
-  <h2>Образование</h2>
-  <input type="text" id="name4"> <br>
+  <h2>Образование</h2> <br>
+  <form class="contact_form" action="" method="post">
+   <p>
+    <label for="university">Университет:</label>
+    <input id="university" type="text"  name="university"/>
+  </p>
+  <p>
+    <label for="university">Факультет:</label>
+    <input id="faculty" type="text"  name="faculty"/>
+  </p>
+  <p>
+    <label for="university">Специализация:</label>
+    <input id="specialization" type="text"  name="specialization"/>
+  </p>
+  <p>
+    <label for="select">Академ.Степень</label>
+    <select name="select" id="select_">
+      <option value="Бакалавр">Бакалавриат</option> 
+      <option value="Магистр" selected>Магистратура</option>
+      <option value="Специалист">Специалитет</option>
+    </select>
+    </p>
 
-  <input type="button" value="Проверить" class="btn" onclick="show()">  <br>
+</form>
+<input type="button" value="Проверить" class="btn" onclick="show()">  
+
 </div>
 
 <div id="work-exp" class="w3-container Tab" style="display:none">

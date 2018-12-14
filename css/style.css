@@ -30,6 +30,12 @@ margin-top: 100px;
   opacity: 0;
 }
 
+::-webkit-calendar-picker-indicator {
+  color: transparent;
+  opacity: 1;
+  background: url(//www.gravatar.com/avatar/cbfaff96665b7567defe1b34a883db8b?s=16&d=identicon&r=PG) no-repeat center;
+  background-size: contain;
+}
 
 .sv {
 max-width: 500px;
@@ -44,9 +50,12 @@ border: 2px;
 .z1 {
    padding: 20px !important;
 }
-
-
-
-#preview {
-  margin: 0 auto;
+.ui-datepickerr-calendar {
+   display: none;
+}
+.ui-datepickerr-month {
+   display: none;
+}
+.ui-datepickerr-next,.ui-datepickerr-prev {
+  display:none;
 }

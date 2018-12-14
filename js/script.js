@@ -18,7 +18,11 @@
     var faculty = document.getElementById("faculty").value;
     var specialization = document.getElementById("specialization").value;
     var select = document.getElementById("select_").value;
-   
+    var workPlace = document.getElementById("work-place").value;
+    var expPos = document.getElementById("exp-pos").value;
+    var duties = document.getElementById("duties").value;
+    var achiev = document.getElementById("achiev").value;
+    var descrp = document.getElementById("descrp").value;
 
     
     
@@ -30,7 +34,7 @@
     previewAva(template_id);
     console.log('3');
 
-    var block = document.getElementById(template_id).innerHTML=name+'<br>'+surname+'<br>'+tel+'<br>'+date+'<br>'+position+'<br>'+aboutme+'<br>'+university+'<br>'+faculty+'<br>'+specialization+'<br>'+select+'<br>';
+    var block = document.getElementById(template_id).innerHTML=name+'<br>'+surname+'<br>'+tel+'<br>'+date+'<br>'+position+'<br>'+aboutme+'<br>'+university+'<br>'+faculty+'<br>'+specialization+'<br>'+select+'<br>'+workPlace+'<br>'+expPos+'<br>'+duties+'<br>'+achiev+'<br>'+descrp+'<br>';
     
 }
 
@@ -39,7 +43,7 @@ function previewAva(template_id){
     var ava = document.getElementById("ava").src;
     var img = document.createElement("img");
     img.setAttribute("src", ava);
-    img.setAttribute("width", 75);
+    img.setAttribute("width", 100);
     img.setAttribute("height", 100);
     console.log('avatar'+'_'+template_id);
     document.getElementById('avatar'+'_'+template_id).appendChild(img);

@@ -115,33 +115,43 @@
       <option value="Магистр" selected>Магистратура</option>
       <option value="Специалист">Специалитет</option>
     </select>
-    </p>
-
+  </p>
 </form>
-<input type="button" value="Проверить" class="btn" onclick="show()">  
-
 </div>
 
 <div id="work-exp" class="w3-container Tab" style="display:none">
   <h2>Опыт работы</h2>
-  <div>
-    <input type="text" >
-    <input type="text" >
-    <input type="text" >
-
-  </div>
-
+  <form class="contact_form" action="" method="post">
+   <p>
+    <label for="work-place">Место работы</label>
+    <input id="work-place" type="text"  name="work-place"/>
+  </p>
+  <p>
+    <label for="university">Должность:</label>
+    <input id="exp-pos" type="text"  name="exp-pos"/>
+  </p>
+  <p>
+    <label for="university">Обязаности:</label>
+    <input id="duties" type="text"  name="duties"/>
+  </p>
+</form>
 </div>
 
+
+
 <div id="achievement" class="w3-container Tab" style="display:none">
-  <h2>Достижения</h2>
-  <div>
-    <input type="text">
-    <input type="text" >
-    <input type="text" >
-
-  </div>
-
+  <h2>Ваши достижения</h2>
+  <form class="contact_form" action="" method="post">
+   <p>
+    <label for="achiev">Название награды</label>
+    <input id="achiev" type="text"  name="achiev"/>
+  </p>
+  <p>
+    <label for="descrp">Описание:</label>
+    <input id="descrp" type="text"  name="descrp"/>
+  </p>
+</form>
+<input type="button" value="Проверить" class="btn" onclick="show()">  
 </div>
 
 

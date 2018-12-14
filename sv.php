@@ -6,8 +6,9 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/form.css">
+<link rel="stylesheet" href="css/rangeslider.css">
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/genPDF.js" ></script>
 <script src="js/script.js"></script>
@@ -15,6 +16,10 @@
 <script src="js/html2canvas.js" type="text/javascript"></script>
 <script src="js/openCity.js"></script>
 <script src="js/image.js"></script>
+<script src="js/rangeslider.js"></script>
+<script src="js/rangeslider.min.js"></script>
+
+
 
 
 <body>
@@ -170,7 +175,7 @@
 <div id="skills" class="w3-container Tab" style="display:none">
   <h2>Навыки</h2>
 
-
+<input type="range">
 </div>
 
 <div id="previews" class="w3-container Tab" style="display:none">
@@ -211,5 +216,6 @@
 <a class="w3-bar-item w3-button" href="logout.php">Log out</a>
 
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
 </body>
 </html>

@@ -6,6 +6,16 @@
 
 
  function show(){
+
+    var check = document.getElementById("previewAva");
+    console.log(check)
+    
+    if(check != null){
+
+        var elem2 = document.getElementById("previewAva");
+        elem2.parentNode.removeChild(elem2);
+    }
+    
     selectTemplate();
     saveToLocalStorage();
     console.log('1');
@@ -35,6 +45,7 @@ function previewAva(template_id){
     img.setAttribute("src", ava);
     img.setAttribute("width", 75);
     img.setAttribute("height", 100);
+    img.id = 'previewAva';
     console.log('avatar'+'_'+template_id);
     document.getElementById('avatar'+'_'+template_id).appendChild(img);
 

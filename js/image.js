@@ -32,9 +32,12 @@ function previewFiles() {
 }
 
 function removeAva(){
-
+  
+  var checkAva = document.getElementById("ava");
+    if(checkAva != null){
   var elem = document.getElementById("ava");
   elem.parentNode.removeChild(elem);
+    }
   localStorage.removeItem('ava');
   delete image;
 

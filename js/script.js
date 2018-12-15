@@ -114,7 +114,7 @@ function saveToLocalStorage(){
 
 function loadFromLocalStorage(){
 
-    var userNameStored = localStorage.getItem('name');
+    var userNameStored = localStorage.getItem('userName');
     var avaStored = localStorage.getItem('ava');
     
     if(avaStored){
@@ -123,6 +123,7 @@ function loadFromLocalStorage(){
     img.setAttribute("src", avaStored);
     img.setAttribute("width", 75);
     img.setAttribute("height", 100);
+    img.id = "ava";
     document.getElementById('preview').appendChild(img);
     }
     document.getElementById('name').value = userNameStored;

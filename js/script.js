@@ -39,7 +39,8 @@
 }
 
 function previewAva(template_id){
-
+    var checkAva = document.getElementById("ava");
+    if(checkAva != null){
     var ava = document.getElementById("ava").src;
     var img = document.createElement("img");
     img.setAttribute("src", ava);
@@ -48,6 +49,7 @@ function previewAva(template_id){
     img.id = 'previewAva';
     console.log('avatar'+'_'+template_id);
     document.getElementById('avatar'+'_'+template_id).appendChild(img);
+    }
 
 }
 
@@ -103,9 +105,11 @@ function saveToLocalStorage(){
 
     var userName = document.getElementById('name').value;
     localStorage.setItem('userName', userName);
+    var checkAva = document.getElementById("ava");
+    if(checkAva != null){
     var ava = document.getElementById("ava").src;
     localStorage.setItem('ava', ava);
-
+    }
 }
 
 function loadFromLocalStorage(){

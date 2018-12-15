@@ -26,7 +26,7 @@
 
 
 
-<body>
+<body onload="loadFromLocalStorage()">
 
 
   <div class="w3-bar w3-black">
@@ -92,8 +92,9 @@
   <div class="form-row">
     <div class="col">
      <label for="exampleFormControlFile1">Фотография: </label>
-    <input id="browse" type="file" onchange="previewFiles()" multiple>
+    <input id="browse" type="file" onchange="previewFiles()">
       <div id="preview"></div>
+      <input type="button" value='X' onclick="removeAva()">
     </div>
     <div class="col">
        <label for="exampleFormControlInput1">Дата рождения: </label>

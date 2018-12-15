@@ -7,6 +7,7 @@
 
  function show(){
     selectTemplate();
+    saveToLocalStorage();
     console.log('1');
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
@@ -32,7 +33,7 @@ function previewAva(template_id){
     var ava = document.getElementById("ava").src;
     var img = document.createElement("img");
     img.setAttribute("src", ava);
-    img.setAttribute("width", 100);
+    img.setAttribute("width", 75);
     img.setAttribute("height", 100);
     console.log('avatar'+'_'+template_id);
     document.getElementById('avatar'+'_'+template_id).appendChild(img);
@@ -83,3 +84,33 @@ function selectTemplate() {
 
 
 }
+
+
+
+
+function saveToLocalStorage(){
+
+    var userName = document.getElementById('name').value;
+    localStorage.setItem('userName', userName);
+    var ava = document.getElementById("ava").src;
+    localStorage.setItem('ava', ava);
+
+}
+
+function loadFromLocalStorage(){
+
+    var userNameStored = localStorage.getItem('name');
+    var avaStored = localStorage.getItem('ava');
+    
+    if(avaStored){
+
+    var img = document.createElement("img");
+    img.setAttribute("src", avaStored);
+    img.setAttribute("width", 75);
+    img.setAttribute("height", 100);
+    document.getElementById('preview').appendChild(img);
+    }
+    document.getElementById('name').value = userNameStored;
+    
+}
+

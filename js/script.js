@@ -9,23 +9,11 @@
     selectTemplate();
     console.log('1');
     var name = document.getElementById("name").value;
-    var surname = document.getElementById("surname").value;
+    var email = document.getElementById("email").value;
     var tel = document.getElementById("tel").value;
     var aboutme = document.getElementById("aboutme").value;
     var position = document.getElementById("position").value;
     var date = document.getElementById("datepicker").value;
-    var university = document.getElementById("university").value;
-    var faculty = document.getElementById("faculty").value;
-    var specialization = document.getElementById("specialization").value;
-    var select = document.getElementById("select_").value;
-    var workPlace = document.getElementById("work-place").value;
-    var expPos = document.getElementById("exp-pos").value;
-    var duties = document.getElementById("duties").value;
-    var achiev = document.getElementById("achiev").value;
-    var descrp = document.getElementById("descrp").value;
-    var course = document.getElementById("course").value;
-    var nameCourse = document.getElementById("nameCourse").value;
-
     
     
     console.log('2');
@@ -36,8 +24,7 @@
     previewAva(template_id);
     console.log('3');
 
-    var block = document.getElementById(template_id).innerHTML=name+'<br>'+surname+'<br>'+tel+'<br>'+date+'<br>'+position+'<br>'+aboutme+'<br>'+university+'<br>'+faculty+'<br>'+specialization+'<br>'+select+'<br>'+workPlace+'<br>'+expPos+'<br>'+duties+'<br>'+achiev+'<br>'+descrp+'<br>'+course+'<br>'+nameCourse+'<br>';
-    
+    var block = document.getElementById(template_id).innerHTML=name+'<br>'+email+'<br>'+tel+'<br>'+date+'<br>'+position+'<br>'+aboutme+'<br>';   
 }
 
 function previewAva(template_id){

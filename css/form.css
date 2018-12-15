@@ -1,52 +1,10 @@
 /* === Remove input autofocus webkit === */
 *:focus {outline: none;}
 
-/* === Шрифты для формы и общая ширина === */
-body {font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;}
-.contact_form h2, .contact_form label {font-family:Georgia, Times, "Times New Roman", serif;}
-.form_hint, .required_notification {font-size: 11px;}
 
-.contact_form {
-    margin-left: auto;
-    margin-right: auto;
-  	width: 550px;
-	}
 
-/* === Размер и расположение блоков === */
-.contact_form label {
-	width:150px;
-	margin-top: 3px;
-	display:inline-block;
-	float:left;
-	padding:3px;
-}
-.contact_form input {
-	height:20px; 
-	width:220px; 
-	padding:5px 8px;
-}
-.contact_form textarea {padding:8px; width:300px;}
-.contact_form button {margin-left:156px;}
 
-	/* Цвета и эффекты */
-	.contact_form input, .contact_form textarea { 
-		border:1px solid #aaa;
-		box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
-		border-radius:2px;
-		padding-right:30px;
-		-moz-transition: padding .25s; 
-		-webkit-transition: padding .25s; 
-		-o-transition: padding .25s;
-		transition: padding .25s;
-	}
-	.contact_form input:focus, .contact_form textarea:focus {
-		background: #fff; 
-		border:1px solid #555; 
-		box-shadow: 0 0 3px #aaa; 
-		padding-right:70px;
-	}
-
-/* === HTML5  === */	
+/*  Р’РђР»РёРґР°С†РёСЏ  */	
 .contact_form input:required, .contact_form textarea:required {
 	background: #fff no-repeat 98% center;
 }
@@ -61,29 +19,8 @@ body {font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", san
 	border-color: #b03535
 }
 
-/* === Стили подсказок === */
-.form_hint {
-	background: #d45252;
-	border-radius: 3px 3px 3px 3px;
-	color: white;
-	margin-left:8px;
-	padding: 1px 6px;
-	z-index: 999; /* подсказки поверх всех элементов */
-	position: absolute; /* правильное отображение, если подсказка в 2 строки */
-	display: none;
-}
-.form_hint::before {
-	content: "\25C0";
-	color:#d45252;
-	position: absolute;
-	top:1px;
-	left:-6px;
-}
-.contact_form input:focus + .form_hint {display: inline;}
-.contact_form input:required:valid + .form_hint {background: #28921f;}
-.contact_form input:required:valid + .form_hint::before {color:#28921f;}
 	
-/* === Оформление кнопки === */
+/* === ГЋГґГ®Г°Г¬Г«ГҐГ­ГЁГҐ ГЄГ­Г®ГЇГЄГЁ === */
 button.submit {
 	background-color: #68b12f;
 	background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
@@ -123,3 +60,5 @@ button.submit:active {
 	-o-box-shadow: 0 0 10px 5px #356b0b inset;
 	
 }
+
+

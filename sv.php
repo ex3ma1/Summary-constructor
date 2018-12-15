@@ -8,6 +8,10 @@
 <link rel="stylesheet" href="css/form.css">
 <link rel="stylesheet" href="css/rangeslider.css">
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="js/genPDF.js" ></script>
@@ -62,84 +66,53 @@
 
   </div>
 
-  <div id="main-info" class="w3-container Tab" style="display:none">
+  <div id="main-info" class="w3-container Tab" style="display:none"> <br>
     <h2>Базовая Информация :</h2> <br>
-    <form class="contact_form" action="" method="post">
-     <p>
-      <label for="name">Имя:</label>
-      <input id="name" type="text"  name="name"/>
-    </p>
-    <p>
-      <label for="email">Email:</label>
-      <input id="surname" type="email" name="email"  />
-    </p>
-    <p>
-      <label for="tel">Телефон:</label>
-      <input id="tel" type="tel" name="tel" />
-    </p>
-    <p>
-      <label for="pos">Должность:</label>
-      <input id="position" type="text"  name="pos"  />
-    </p>
-    <p>
-      <label for="text">Дата рождения:</label>
-      <input id="datepicker" type="text">
-    </p>
-    <div class="upload-btn-wrapper">  
-      <button class="btn-1">Upload a file</button>
-      <input id="browse" type="file" onchange="previewFiles()" multiple>
+  <form class="x">
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Name</label>
+    <input type="text" class="form-control" id="name" required="">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email</label>
+    <input type="text" class="form-control" id="email" required="">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Телефон</label>
+    <input type="tel" class="form-control" id="tel" required="">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Желаемая должность:</label>
+    <input type="text" class="form-control" id="position">
+  </div>
+   <div class="form-group">
+   
+  </div>
+  <form class="x">
+  <div class="form-row">
+    <div class="col">
+     <label for="exampleFormControlFile1">Фотография: </label>
+    <input id="browse" type="file" onchange="previewFiles()" multiple>
       <div id="preview"></div>
     </div>
-    <p>
-      <label for="message">О себе:</label>
-      <textarea id="aboutme" name="message" cols="40" rows="6" required ></textarea>
-    </p>
-  </form>
+    <div class="col">
+       <label for="exampleFormControlInput1">Дата рождения: </label>
+   <input class="form-control" id="datepicker" type="text">
+    </div>
+  </div>
+</form>
+  <div class="form-group x">
+    <label for="exampleFormControlTextarea1">О себе</label>
+    <textarea class="form-control" id="aboutme" rows="3"></textarea>
+  </div>
+</form>
+<input type="button" value="Проверить" class="btn" onclick="show()">  
 
 </div>
 
 <div id="education" class="w3-container Tab" style="display:none">
   <h2>Образование</h2> <br>
-  <form class="contact_form" action="" method="post">
-   <p>
-    <label for="university">Университет:</label>
-    <input id="university" type="text"  name="university"/>
-  </p>
-  <p>
-    <label for="university">Факультет:</label>
-    <input id="faculty" type="text"  name="faculty"/>
-  </p>
-  <p>
-    <label for="university">Специализация:</label>
-    <input id="specialization" type="text"  name="specialization"/>
-  </p>
-  <p>
-    <label for="select">Академ.Степень</label>
-    <select name="select" id="select_">
-      <option value="Бакалавр">Бакалавриат</option> 
-      <option value="Магистр" selected>Магистратура</option>
-      <option value="Специалист">Специалитет</option>
-    </select>
-  </p>
-</form>
-</div>
-
-<div id="work-exp" class="w3-container Tab" style="display:none">
-  <h2>Опыт работы</h2>
-  <form class="contact_form" action="" method="post">
-   <p>
-    <label for="work-place">Место работы</label>
-    <input id="work-place" type="text"  name="work-place"/>
-  </p>
-  <p>
-    <label for="university">Должность:</label>
-    <input id="exp-pos" type="text"  name="exp-pos"/>
-  </p>
-  <p>
-    <label for="university">Обязаности:</label>
-    <input id="duties" type="text"  name="duties"/>
-  </p>
-</form>
+  
 </div>
 
 
@@ -168,7 +141,6 @@
   </p>
 </fieldset>
 </form>
-<input type="button" value="Проверить" class="btn" onclick="show()">  
 </div>
 
 
@@ -216,6 +188,7 @@
 <a class="w3-bar-item w3-button" href="logout.php">Log out</a>
 
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
 
 </body>
 </html>

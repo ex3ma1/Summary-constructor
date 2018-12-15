@@ -59,3 +59,10 @@ border: 2px;
 .ui-datepickerr-next,.ui-datepickerr-prev {
   display:none;
 }
+
+.x {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+

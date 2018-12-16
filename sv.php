@@ -91,10 +91,8 @@
     <label for="position">Желаемая должность:</label>
     <input type="text" class="form-control" id="position">
   </div>
-   <div class="form-group"> 
-  </div>
   <div class="form-row">
-    <div class="col">
+    <div class="col ">
      <label for="browse">Фотография: </label>
     <input id="browse" type="file" onchange="previewFiles()">
       <div id="preview"></div>
@@ -167,7 +165,7 @@
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="month_start">Месяц начала:</label>
-    <select class="custom-select custom-select-lg mb-3" id="month_start">
+    <select class="form-control form-control-lg" id="month_start">
       <option>Июль</option>
       <option>Август</option>
       <option>Хуй во рту</option>
@@ -181,7 +179,7 @@
     </div>
 <div class="form-group col-md-6">
       <label for="year_start">Год начала:</label>
-    <select class="custom-select custom-select-lg mb-3" id="year_start">
+    <select class="form-control form-control-lg" id="year_start">
       <option>2018</option>
       <option>2011</option>
       <option>2012</option>
@@ -197,7 +195,7 @@
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="month_end">Месяц окончания:</label>
-    <select class="custom-select custom-select-lg mb-3" id="month_end">
+    <select class="form-control form-control-lg" id="month_end">
       <option>Июль</option>
       <option>Август</option>
       <option>Сентябрь</option>
@@ -211,7 +209,7 @@
     </div>
 <div class="form-group col-md-6">
       <label for="year_end">Год окончания:</label>
-    <select class="custom-select custom-select-lg mb-3" id="year_end">
+    <select class="form-control form-control-lg" id="year_end">
       <option>2018</option>
       <option>2017</option>
       <option>2016</option>
@@ -247,7 +245,7 @@
     <input type="text" class="form-control" id="descr_achiev">
   </div>
   <label for="year_end">Год окончания:</label>
-    <select class="custom-select custom-select-lg mb-3 " id="year_endd">
+    <select class="custom-select" id="year_endd">
   <option value="2018">2018</option>
   <option value="2017">2017</option>
   <option value="2016">2016</option>
@@ -262,6 +260,11 @@
   <option value="2007">2007</option>
   <option value="2006">2006</option>
   <option value="2005">2005</option>
+  <option value="2004">2004</option>
+  <option value="2003">2003</option>
+  <option value="2002">2002</option>
+  <option value="2001">2001</option>
+
 </select>
 </form>
 <input type="button" value="Проверить" class="btn" onclick="show()">

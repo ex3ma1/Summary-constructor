@@ -28,6 +28,10 @@
   </head>
 
   <body id="page-top">
+  <?php
+    require "db.php"
+   
+    ?>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -46,10 +50,10 @@
             </li>
            
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Регистрация</a>
+              <a class="nav-link js-scroll-trigger" href="signUp.php">Регистрация</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Вход</a>
+              <a class="nav-link js-scroll-trigger" href="login.php">Вход</a>
             </li>
           </ul>
         </div>
@@ -121,8 +125,8 @@
           <div class="col-lg-3 col-md-6 text-center">
             <div class="service-box mt-5 mx-auto">
               <i class="fas fa-4x fa-heart text-primary mb-3 sr-icon-4"></i>
-              <h3 class="mb-3">Made with Love</h3>
-              <p class="text-muted mb-0">You have to make your websites with love these days!</p>
+              <h3 class="mb-3">1000+</h3>
+              <p class="text-muted mb-0">Более тысячи людей нашли работу!</p>
             </div>
           </div>
         </div>
@@ -136,7 +140,7 @@
       <div class="container-fluid p-0">
 
           <div class="container__h2">
-        <h2 >Какой шаблон соответствует вашей профессии?</h2> 
+        <h2 >Найти работу будет просто.</h2> 
         <hr class="my-4">
           </div>
 
@@ -147,12 +151,7 @@
               <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
+                 
                 </div>
               </div>
             </a>
@@ -162,12 +161,7 @@
               <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
+                  
                 </div>
               </div>
             </a>
@@ -177,12 +171,7 @@
               <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
+                  
                 </div>
               </div>
             </a>
@@ -192,12 +181,7 @@
               <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
+                  
                 </div>
               </div>
             </a>
@@ -207,12 +191,7 @@
               <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
+                 
                 </div>
               </div>
             </a>
@@ -222,12 +201,7 @@
               <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
               <div class="portfolio-box-caption">
                 <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
+                  
                 </div>
               </div>
             </a>
@@ -239,34 +213,31 @@
     <section >
       <div class="hint__container">
         <div class="container__h2">
-        <h2> Как это работает?</h2> 
-        <hr class="my-4">
-          </div>
-
-      <div class="container text-center">
-        <div class="hint">
+           <h2> Как это работает?</h2> 
+           <hr class="my-4">
+        </div>
+       <div class="container_text_center"> 
          <div class="hint__1">
-           <p>01</p>
+           <p class="hint__2">01</p>
            <h4  class="hint__text">
-             Выберите дизайн
+             Выберите дизайн.
            </h4>
          </div>
          <div class="hint__1">
-           <p class="hint__2" >02</p>
-           <h4  class="hint__text">
-             Заполните информацию о себе
-           </h4>
+             <p class="hint__2">02</p>
+             <h4 class="hint__text">
+               Заполните информацию о себе.
+             </h4>
          </div>
-          <div class="hint__1">
-           <p>03</p>
-           <div class="hint__text">
-           <h4  >
-             Сохраните в PDF и создайте свой личный сайт-резюме
+         <div class="hint__1">        
+           <p class="hint__2">03</p>     
+          <div class="container__hint-2">
+           <h4  class="hint__text">
+             Сохраните в PDF и создайте свой личный сайт-резюме.
            </h4>
            </div>
          </div>
         </div>
-      </div>
       </div>
     </section>
     <div >

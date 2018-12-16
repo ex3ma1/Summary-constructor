@@ -1,6 +1,6 @@
 function genPDF() {
 	
-	html2canvas(document.body, {
+	html2canvas(document.getElementById("sv"), {
 
         onrendered: function(canvas) {
             var img =canvas.toDataURL("img/png");

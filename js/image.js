@@ -1,7 +1,9 @@
 
-var image = new Image();
-function previewFiles() {
 
+function previewFiles() {
+  removeAva();
+  var image = new Image();
+  console.log(image);
   var preview = document.querySelector('#preview');
   var files   = document.querySelector('input[type=file]').files;
 
@@ -18,6 +20,8 @@ function previewFiles() {
         image.src = this.result;
         image.id = 'ava';
         preview.appendChild( image );
+        document.getElementById('del').style.display='block';
+        
       }, false);
 
       reader.readAsDataURL(file);
@@ -38,7 +42,12 @@ function removeAva(){
   var elem = document.getElementById("ava");
   elem.parentNode.removeChild(elem);
     }
+  document.getElementById('del').style.display='none';
   localStorage.removeItem('ava');
+  
+
   delete image;
+ 
+
 
 }

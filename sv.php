@@ -94,8 +94,13 @@
     <div class="col vv">
      <label for="browse" class="custom-file-label">Фотография: </label>
     <input id="browse" type="file" onchange="previewFiles()"><br>
+      
+    <div id="displayAva" style="display:flex;">
       <div id="preview"></div>
-      <input type="button" value='X' onclick="removeAva()">
+      <input id="del" type="button" value='X' onclick="removeAva()" style="display:none;">
+
+    
+    </div>
     </div>
     <div class="col">
        <label for="datepicker">Дата рождения: </label>

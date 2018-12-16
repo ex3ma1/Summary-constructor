@@ -69,3 +69,6 @@ border: 2px;
 label {
   font-weight: bold;
 }
+input[type=button] {
+  margin-left: 600px;
+}

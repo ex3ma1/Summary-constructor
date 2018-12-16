@@ -1,7 +1,7 @@
 
 
 function previewFiles() {
-  removeAva();
+  removeAva()
   var image = new Image();
   console.log(image);
   var preview = document.querySelector('#preview');

@@ -5,6 +5,9 @@
 });
 
 
+function logout(){
+    localStorage.clear();
+}
  function show(){
 
     var check = document.getElementById("previewAva");

@@ -37,7 +37,7 @@
     <button class="w3-bar-item w3-button z1" onclick="Tabs('achievement')">Достижения</button>
     <button class="w3-bar-item w3-button z1" onclick="Tabs('skills')">Навыки</button>
 
-<a class="w3-bar-item w3-button z1 z" href="logout.php">Log out</a>
+<a class="w3-bar-item w3-button z1 z" href="logout.php" onclick="logout()">Log out</a>
     <button class="w3-bar-item w3-button z1" onclick="Tabs('previews')">Превью</button>
 
 
@@ -96,7 +96,7 @@
     <input id="browse" type="file" onchange="previewFiles()"><br>
       
     <div id="displayAva" style="display:flex;">
-      <div id="preview"></div>
+      <div id="preview" ></div>
       <input id="del" type="button" value='X' onclick="removeAva()" style="display:none;">
 
     

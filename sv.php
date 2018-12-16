@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 <title>Summary-constructor</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
@@ -14,12 +15,19 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+=======
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/style.css">
+>>>>>>> landing-page
 <script src="js/genPDF.js" ></script>
 <script src="js/script.js"></script>
 <script src="js/jspdf.min.js" type="text/javascript"></script>
 <script src="js/html2canvas.js" type="text/javascript"></script>
 <script src="js/openCity.js"></script>
 <script src="js/image.js"></script>
+<<<<<<< HEAD
 <script src="js/rangeslider.js"></script>
 <script src="js/rangeslider.min.js"></script>
 
@@ -47,20 +55,51 @@
     <h2>Шаблон</h2>
     <div>
       <form id='raz'>
+=======
+
+
+<body>
+
+
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('template')">Templates</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('London')">London</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Paris</button>
+  
+
+  <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Tokyo</button>
+
+  <a class="w3-bar-item w3-button" href="logout.php">Log out</a>
+</div>
+
+<div id="template" class="w3-container city" >
+  <h2>Templates</h2>
+  <div>
+  <form id='raz'>
+>>>>>>> landing-page
         <div>
           <input type="radio" checked name="raz" value="block"/> 
           <div style="background: red; width:100px; height:100px"></div>  
         </div>
+<<<<<<< HEAD
         
+=======
+          <br>
+>>>>>>> landing-page
         <div>
           <input type="radio" checked name="raz" value="block2"/> 
           <div style="background: black; width:100px; height:100px"></div>  
         </div>
+<<<<<<< HEAD
 
+=======
+          <br>
+>>>>>>> landing-page
         <div>
           <input type="radio" checked name="raz" value="block3"/> 
           <div style="background: green; width:100px; height:100px"></div>  
         </div>
+<<<<<<< HEAD
       </form>
     </div>
 
@@ -306,6 +345,76 @@
 
 
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+=======
+
+        <br>
+
+     
+  </form>
+  </div>
+
+</div>
+
+<div id="London" class="w3-container city" style="display:none">
+  <h2>London</h2>
+  <div>
+      <input type="text" id="name">
+      <input type="text" id="name1">
+      <input type="text" id="name2">
+      
+  </div>
+
+</div>
+
+<div id="Paris" class="w3-container city" style="display:none">
+  <h2>Paris</h2>
+  <input type="text" id="name4"> <br>
+
+   <div class="upload-btn-wrapper">
+
+  <button class="btn-1">Upload a file</button>
+  <input id="browse" type="file" onchange="previewFiles()" multiple>
+<div id="preview"></div>
+  </div> <br>
+ 
+  <input type="button" value="Проверить" class="btn" onclick="show()">  <br>
+</div>
+
+<div id="Tokyo" class="w3-container city" style="display:none">
+  <div id="sv">
+      <div id="Label1" style='display: none;'>
+          <h2>Template 1</h2>
+          
+          <p id="block"> </p>
+          <div id='avatar_block'></div>
+      
+     </div>
+
+     <div id="Label2" style='display: none;'>
+     Template 2
+     <p id="block2"> </p>
+     <div id='avatar_block2'></div>
+     </div>
+
+     <div id="Label3" style='display: none;'>
+     Template 3
+     <p id="block3"> </p>
+     <div id='avatar_block3'></div>
+     </div>
+         
+      
+  </div>
+  <a href="javascript:genPDF()">Save</a>
+
+
+
+    
+</div>
+
+
+
+
+>>>>>>> landing-page
 
 
 </body>

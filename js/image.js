@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 
 var image = new Image();
+=======
+>>>>>>> landing-page
 function previewFiles() {
 
   var preview = document.querySelector('#preview');
@@ -12,7 +15,11 @@ function previewFiles() {
       var reader = new FileReader();
 
       reader.addEventListener("load", function () {
+<<<<<<< HEAD
         
+=======
+        var image = new Image();
+>>>>>>> landing-page
         image.height = 100;
         image.title = file.name;
         image.src = this.result;
@@ -29,6 +36,7 @@ function previewFiles() {
     [].forEach.call(files, readAndPreview);
   }
 
+<<<<<<< HEAD
 }
 
 function removeAva(){
@@ -42,3 +50,6 @@ function removeAva(){
   delete image;
 
 }
+=======
+}
+>>>>>>> landing-page

@@ -1,4 +1,5 @@
 .upload-btn-wrapper {
+<<<<<<< HEAD
    position: relative;
   overflow: hidden;
   display: inline-block;
@@ -13,6 +14,14 @@ margin-top: 100px;
 }
 
  .btn-1 {
+=======
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn-1 {
+>>>>>>> landing-page
   border: 2px solid gray;
   color: gray;
   background-color: white;
@@ -20,7 +29,11 @@ margin-top: 100px;
   border-radius: 8px;
   font-size: 20px;
   font-weight: bold;
+<<<<<<< HEAD
 } 
+=======
+}
+>>>>>>> landing-page
 
 .upload-btn-wrapper input[type=file] {
   font-size: 100px;
@@ -30,18 +43,22 @@ margin-top: 100px;
   opacity: 0;
 }
 
+<<<<<<< HEAD
 ::-webkit-calendar-picker-indicator {
   color: transparent;
   opacity: 1;
   background: url(//www.gravatar.com/avatar/cbfaff96665b7567defe1b34a883db8b?s=16&d=identicon&r=PG) no-repeat center;
   background-size: contain;
 }
+=======
+>>>>>>> landing-page
 
 .sv {
 max-width: 500px;
 max-height:  750px;
 border-radius: 10px;
 border: 2px;
+<<<<<<< HEAD
 }
 
 .z {
@@ -72,4 +89,7 @@ label {
 
 .vv{
   margin-top: 30px
+=======
+
+>>>>>>> landing-page
 }

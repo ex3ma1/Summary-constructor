@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  $( function() {
     $( "#datepicker" ).datepicker({
         dateFormat: 'dd-mm-yy'
@@ -48,6 +49,17 @@
 
     
     
+=======
+
+
+function show(){
+    selectTemplate();
+    console.log('1');
+    var text = document.getElementById("name").value;
+    var text1 = document.getElementById("name1").value;
+    var text2 = document.getElementById("name2").value;
+    var text3 = document.getElementById("name4").value;
+>>>>>>> landing-page
     console.log('2');
 
     var form = document.getElementById("raz");
@@ -56,6 +68,7 @@
     previewAva(template_id);
     console.log('3');
 
+<<<<<<< HEAD
     var block = document.getElementById(template_id).innerHTML=name+'<br>'+email+'<br>'+tel+'<br>'+date+'<br>'+position+'<br>'+aboutme+'<br>'+university+'<br>'+yyAdd+'<br>'+yyEnd+'<br>'+academicDegree+'<br>'+faculty+'<br>'+nameCompany+'<br>'+pos+'<br>'+department+'<br>'+month_start+'<br>'+year_start+'<br>'+month_end+'<br>'+year_end+'<br>'+duties+'<br>'+duties1+'<br>'+duties2+'<br>'+nameAchiev+'<br>'+descr_achiev+'<br>'+year_endd;   
 }
 
@@ -71,6 +84,21 @@ function previewAva(template_id){
         console.log('avatar'+'_'+template_id);
         document.getElementById('avatar'+'_'+template_id).appendChild(img);
     }
+=======
+    var block = document.getElementById(template_id).innerHTML=text+'<br>'+text1+'<br>'+text2+'<br>'+text3+'<br>';
+    
+}
+
+function previewAva(template_id){
+
+    var ava = document.getElementById("ava").src;
+    var img = document.createElement("img");
+    img.setAttribute("src", ava);
+    img.setAttribute("width", 75);
+    img.setAttribute("height", 100);
+    console.log('avatar'+'_'+template_id);
+    document.getElementById('avatar'+'_'+template_id).appendChild(img);
+>>>>>>> landing-page
 
 }
 
@@ -79,7 +107,11 @@ function selectTemplate() {
     var form = document.getElementById("raz");
     var label = form.elements["raz"].value;
     
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> landing-page
     
     if (label=='block') {
 
@@ -89,7 +121,11 @@ function selectTemplate() {
 
         document.getElementById("Label3").style.display='none';
 
+<<<<<<< HEAD
 
+=======
+         
+>>>>>>> landing-page
 
     } else if (label=='block2') {
 
@@ -99,7 +135,11 @@ function selectTemplate() {
 
         document.getElementById("Label3").style.display='none';
 
+<<<<<<< HEAD
 
+=======
+         
+>>>>>>> landing-page
 
     } else if (label=='block3') {
 
@@ -109,6 +149,7 @@ function selectTemplate() {
 
         document.getElementById("Label3").style.display='block';
 
+<<<<<<< HEAD
 
 
     } else {
@@ -151,3 +192,14 @@ function loadFromLocalStorage(){
     
 }
 
+=======
+         
+
+    } else {
+            console.log('Noting found');
+
+    }
+     
+
+}
+>>>>>>> landing-page

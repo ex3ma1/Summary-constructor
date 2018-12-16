@@ -1,3 +1,5 @@
+
+var image = new Image();
 function previewFiles() {
 
   var preview = document.querySelector('#preview');
@@ -10,7 +12,7 @@ function previewFiles() {
       var reader = new FileReader();
 
       reader.addEventListener("load", function () {
-        var image = new Image();
+        
         image.height = 100;
         image.title = file.name;
         image.src = this.result;
@@ -26,5 +28,17 @@ function previewFiles() {
   if (files) {
     [].forEach.call(files, readAndPreview);
   }
+
+}
+
+function removeAva(){
+  
+  var checkAva = document.getElementById("ava");
+    if(checkAva != null){
+  var elem = document.getElementById("ava");
+  elem.parentNode.removeChild(elem);
+    }
+  localStorage.removeItem('ava');
+  delete image;
 
 }

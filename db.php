@@ -5,5 +5,5 @@ R::setup( 'mysql:host=localhost;dbname=SV',
 'root', 'root' ); 
 
 
-session_start();
+
 ?>

@@ -63,6 +63,17 @@
         if(R::count('users',"email= ? ", array($data['email']))> 0){
             $errors[] = 'User with such email already exist';
         }
+        if( empty($errors))
+        {
+            $user = R::dispense('users');
+            $user->login = $data['login'];
+            $user->email = $data['email'];
+            $user->password = password_hash($data['password'],PASSWORD_DEFAULT);
+            R::store($user);
+            $_SESSION['logged_user'] = $user;
+           header('Location: sv.php');  
+        }
+         
         // if( empty($errors))
         // {
         //     $user = R::dispense('users');
@@ -120,12 +131,11 @@
             $user->email = $data['email'];
             $user->password = password_hash($data['password'],PASSWORD_DEFAULT);
             R::store($user);
-            
-            
-            
         } else{
             echo '<div style="color:white;">'.array_shift($errors).'</div>';
-        }?>
+        }
+        
+        ?>
           </div>
            <button class="signUp_btn" type="submit" name="do_login">ЗАРЕГЕСТРИРОВАТЬСЯ</button>
     </form>

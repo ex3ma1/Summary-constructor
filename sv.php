@@ -68,7 +68,7 @@
 
   <div id="main-info" class="w3-container Tab" style="display:none"> <br>
     <h2>Базовая Информация</h2> <br>
-  <form class="x">
+  <form class="x" >
     <div class="form-row">
     <div class="form-group col-md-6">
       <label for="name">Имя:</label>
@@ -92,9 +92,9 @@
     <input type="text" class="form-control" id="position">
   </div>
   <div class="form-row">
-    <div class="col">
+    <div class="col vv">
      <label for="browse" class="custom-file-label">Фотография: </label>
-    <input id="browse" type="file" onchange="previewFiles()">
+    <input id="browse" type="file" onchange="previewFiles()"><br>
       <div id="preview"></div>
       <input type="button" value='X' onclick="removeAva()">
     </div>

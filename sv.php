@@ -92,8 +92,8 @@
     <input type="text" class="form-control" id="position">
   </div>
   <div class="form-row">
-    <div class="col ">
-     <label for="browse">Фотография: </label>
+    <div class="col">
+     <label for="browse" class="custom-file-label">Фотография: </label>
     <input id="browse" type="file" onchange="previewFiles()">
       <div id="preview"></div>
       <input type="button" value='X' onclick="removeAva()">

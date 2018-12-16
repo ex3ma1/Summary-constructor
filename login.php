@@ -30,9 +30,33 @@
 
   <body id="page-top">
   <?php
-    require "db.php"
-   
-    ?>
+require "db.php";
+$data = $_POST;
+if(isset($data['do_login']))
+    {
+        $errors = array();
+        $user = R::findOne('users', 'login = ?', array($data['login']));
+        if( $user){
+            if(password_verify($data['password'], $user->password))
+        {
+           $_SESSION['logged_user'] = $user;
+           header('Location: sv.php');
+        }
+        else
+        {
+            $errors[] = 'Incorrect password';
+        }
+        }
+        else
+        {
+            $errors[] = "User not found";
+        }
+        // if( ! empty($errors))
+        // {
+        //     echo '<div id="error_message" style="color:red;">'.array_shift($errors).'</div>';
+        // } 
+    }
+?>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -44,7 +68,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="file:///C:/Users/kosti/Downloads/Summary-constructor-master/Summary-constructor-master/index%20%E2%80%94%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.html">Главная</a>
+              <a class="nav-link js-scroll-trigger" href="index.php">Главная</a>
             </li>
            
             <li class="nav-item">
@@ -63,10 +87,16 @@
       <div class="container my-auto">
         <div class="containers">
          
-         <form class="form">
-           <input class="form__input" type="email" placeholder="Логин"/>
-           <input class="form__input" type="password" placeholder="Пароль"/>
-           <button type="submit">ВОЙТИ</button>
+         <form class="form" action="login.php" method="POST">
+           <input class="form__input" type="text" name="login" placeholder="Логин" value = "<?php echo @$data['login']; ?>"/>
+           <input class="form__input" type="password" name="password" placeholder="Пароль" value = "<?php echo @$data['password']; ?>"/>
+           <div id="error">
+            <?php 
+                if( ! empty($errors)) 
+                echo array_shift($errors)
+                ?>
+            </div>
+           <button class="login_btn" type="submit" name="do_login">ВОЙТИ</button>
     </form>
     
     </div>

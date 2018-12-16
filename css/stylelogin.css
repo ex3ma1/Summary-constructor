@@ -20,7 +20,21 @@ input{
 	border-color: #bfbfbd;
 	border-style: solid;
 }
-button{
+
+
+.login_btn {
+	width: 252px;
+	height: 36px;
+	margin-top: 35px;  
+	background: #f06040;
+	border: none;
+	font-size:  1rem;
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	color: white;
+	font-weight: 700;
+}
+
+.signUp_btn {
 	width: 252px;
 	height: 36px;
 	margin-top: 35px;  
@@ -33,7 +47,7 @@ button{
 }
 .form__input{
 	background: none;
-	padding-left: 16px: 
+	padding-left: 16px;
 }
 
 @media screen and (max-width: 600px) {
@@ -44,7 +58,14 @@ button{
     font-size:  0.7rem;
     
   }
-  button{
+  .login_btn{
+	width: 172px;
+	height: 30px;
+	margin-top: 20px;  
+	background: #f06040;
+	font-size:  0.7rem;
+}
+.signUp_btn{
 	width: 172px;
 	height: 30px;
 	margin-top: 20px;  

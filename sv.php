@@ -37,8 +37,8 @@
     <button class="w3-bar-item w3-button z1" onclick="Tabs('achievement')">Достижения</button>
     <button class="w3-bar-item w3-button z1" onclick="Tabs('skills')">Навыки</button>
 
-
-    <button class="w3-bar-item w3-button z z1" onclick="Tabs('previews')">Превью</button>
+<a class="w3-bar-item w3-button z1 z" href="logout.php">Log out</a>
+    <button class="w3-bar-item w3-button z1" onclick="Tabs('previews')">Превью</button>
 
 
   </div>
@@ -67,81 +67,199 @@
   </div>
 
   <div id="main-info" class="w3-container Tab" style="display:none"> <br>
-    <h2>Базовая Информация :</h2> <br>
+    <h2>Базовая Информация</h2> <br>
   <form class="x">
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Name</label>
-    <input type="text" class="form-control" id="name" required="">
+    <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="name">Имя:</label>
+      <input type="text" class="form-control" id="name">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="surname">Фамилия:</label>
+      <input type="text" class="form-control" id="surname">
+    </div>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlInput1">Email</label>
-    <input type="text" class="form-control" id="email" required="">
+    <label for="email">Email:</label>
+    <input type="email" class="form-control" id="email" required="">
   </div>
   <div class="form-group">
-    <label for="exampleFormControlInput1">Телефон</label>
+    <label for="tel">Телефон:</label>
     <input type="tel" class="form-control" id="tel" required="">
   </div>
   <div class="form-group">
-    <label for="exampleFormControlInput1">Желаемая должность:</label>
+    <label for="position">Желаемая должность:</label>
     <input type="text" class="form-control" id="position">
   </div>
-   <div class="form-group">
-   
+   <div class="form-group"> 
   </div>
-  <form class="x">
   <div class="form-row">
     <div class="col">
-     <label for="exampleFormControlFile1">Фотография: </label>
+     <label for="browse">Фотография: </label>
     <input id="browse" type="file" onchange="previewFiles()">
       <div id="preview"></div>
       <input type="button" value='X' onclick="removeAva()">
     </div>
     <div class="col">
-       <label for="exampleFormControlInput1">Дата рождения: </label>
+       <label for="datepicker">Дата рождения: </label>
    <input class="form-control" id="datepicker" type="text">
     </div>
   </div>
-</form>
+
   <div class="form-group x">
-    <label for="exampleFormControlTextarea1">О себе</label>
+    <label for="aboutme">О себе:</label>
     <textarea class="form-control" id="aboutme" rows="3"></textarea>
   </div>
 </form>
-<input type="button" value="Проверить" class="btn" onclick="show()">  
-
 </div>
 
-<div id="education" class="w3-container Tab" style="display:none">
+<div id="education" class="w3-container Tab" style="display:none"> <br>
   <h2>Образование</h2> <br>
-  
+  <form class="x">
+  <div class="form-group">
+    <label for="university">Университет:</label>
+    <input type="text" class="form-control" id="university">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="yy-add">Год поступления:</label>
+     <input id="yy-add" class="form-control" type="number" min="1950" max="2050" step="1" value="2016" />
+    </div>
+    <div class="form-group col-md-6">
+      <label for="yy-end">Год окончания:</label>
+     <input id="yy-end" class="form-control" type="number" min="1950" max="2099" step="1" value="2016" />
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="academic-degree">Академ.Степень:</label>
+    <select class="form-control " id="academic-degree">
+      <option>Бакалавриат</option>
+      <option>Магистратура</option>
+      <option>Специалитет</option>
+    </select>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="faculty">Факультет:</label>
+      <input type="text" class="form-control" id="faculty">
+    </div>
+  </div>
+</form>
+</div>
+
+<div id="work-exp" class="w3-container Tab" style="display:none"> <br>
+  <h2>Опыт работы</h2>  <br>
+  <form class="x">
+  <div class="form-group">
+    <label for="nameCompany">Название компании:</label>
+    <input type="text" class="form-control" id="nameCompany">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="pos.">Должность:</label>
+    <input type="text" class="form-control" id="pos.">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="department">Отдел:</label>
+     <input type="text" class="form-control" id="department">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="month_start">Месяц начала:</label>
+    <select class="form-control form-control-lg" id="month_start">
+      <option>Июль</option>
+      <option>Август</option>
+      <option>Хуй во рту</option>
+      <option>Июль</option>
+      <option>Август</option>
+      <option>Хуй во рту</option>
+      <option>Июль</option>
+      <option>Август</option>
+      <option>Хуй во рту</option>
+    </select>
+    </div>
+<div class="form-group col-md-6">
+      <label for="year_start">Год начала:</label>
+    <select class="form-control form-control-lg" id="year_start">
+      <option>2018</option>
+      <option>2011</option>
+      <option>2012</option>
+      <option>2013</option>
+      <option>2014</option>
+      <option>2015</option>
+      <option>1994</option>
+      <option>111А</option>
+      <option>2232</option>
+    </select>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="month_end">Месяц окончания:</label>
+    <select class="form-control form-control-lg" id="month_end">
+      <option>Июль</option>
+      <option>Август</option>
+      <option>Сентябрь</option>
+      <option>Июль</option>
+      <option>Август</option>
+      <option>Декабрь</option>
+      <option>Июль</option>
+      <option>Август</option>
+      <option>Январь</option>
+    </select>
+    </div>
+<div class="form-group col-md-6">
+      <label for="year_end">Год окончания:</label>
+    <select class="form-control form-control-lg" id="year_end">
+      <option>2018</option>
+      <option>2017</option>
+      <option>2016</option>
+      <option>2013</option>
+      <option>2014</option>
+      <option>2013</option>
+      <option>2012</option>
+      <option>2011</option>
+      <option>2010</option>
+    </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="duties">Обязаности/Достижения:</label>
+    <input type="text" class="form-control" id="duties" placeholder="1."> <br>
+    <input type="text" class="form-control" id="duties1" placeholder="2."> <br>
+    <input type="text" class="form-control" id="duties2" placeholder="3."> <br>
+  </div>
+</form>
+
 </div>
 
 
-
-<div id="achievement" class="w3-container Tab" style="display:none">
-  <h2>Ваши достижения</h2>
-  <form class="contact_form" action="" method="post">
-    <fieldset>
-   <p>
-    <label for="achiev">Название награды</label>
-    <input id="achiev" type="text"  name="achiev"/>
-  </p>
-  <p>
-    <label for="descrp">Описание:</label>
-    <input id="descrp" type="text"  name="descrp"/>
-  </p>
-</fieldset>
-  <fieldset>
-  <p>
-    <label for="course">Название школы/курсов:</label> <br>
-    <input id="course" type="text"  name="course"/>
-  </p>
-  <p>
-    <label for="nameCourse">Название Курса:</label>
-    <input id="nameCourse" type="text"  name="nameCourse"/>
-  </p>
-</fieldset>
+<div id="achievement" class="w3-container Tab" style="display:none"> <br>
+  <h2>Ваши достижения</h2> <br>
+  <form class="x">
+  <div class="form-group">
+    <label for="nameCompany">Название награды / мероприятия / достижения:</label>
+    <input type="text" class="form-control" id="nameAchiev">
+  </div>
+  <div class="form-group">
+    <label for="nameCompany">Описание:</label>
+    <input type="text" class="form-control" id="descr_achiev">
+  </div>
+  <label for="year_end">Год окончания:</label>
+    <select class="form-control form-control-lg" id="year_endd">
+      <option>2018</option>
+      <option>2017</option>
+      <option>2016</option>
+      <option>2013</option>
+      <option>2014</option>
+      <option>2013</option>
+      <option>2012</option>
+      <option>2011</option>
+      <option>2010</option>
+    </select>
 </form>
+<input type="button" value="Проверить" class="btn" onclick="show()">
 </div>
 
 
@@ -176,17 +294,8 @@
 
  </div>
  <a href="javascript:genPDF()">Save</a>
-
-
-
-
 </div>
 
-
-<br><br><br><br><br><br><br><br><br>
-
-
-<a class="w3-bar-item w3-button" href="logout.php">Log out</a>
 
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 

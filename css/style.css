@@ -66,3 +66,6 @@ border: 2px;
   margin-right: auto;
 }
 
+label {
+  font-weight: bold;
+}

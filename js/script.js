@@ -81,6 +81,12 @@ function logout(){
     var block_position = document.getElementById(template_id+'_position').innerHTML=position;
     var block_datepicker = document.getElementById(template_id+'_date').innerHTML=date;
     var block_aboutme = document.getElementById(template_id+'_aboutme').innerHTML=aboutme;
+    var block_university = document.getElementById(template_id+'_university').innerHTML=university;
+    var block_yyAdd = document.getElementById(template_id+'_yyAdd').innerHTML=yyAdd;
+    var block_yyEnd = document.getElementById(template_id+'_yyEnd').innerHTML=yyEnd;
+    var block_academicDegree = document.getElementById(template_id+'_academicDegree').innerHTML=academicDegree;
+    var block_faculty = document.getElementById(template_id+'_faculty').innerHTML=faculty;
+
 } 
 
 function previewAva(template_id){

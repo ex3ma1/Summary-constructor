@@ -288,38 +288,75 @@
 <div id="previews" class="w3-container Tab" style="display:none">
   <div id="sv">
     <div id="Label1" style='display: none;'>
+      <div class="position_main">
+        <div class="avatar">
+          <div id='avatar_block'></div>
+          <div class="position_text xx">
+            <p class="zf">Позиция:&nbsp; </p>
+            <p id="block_position"></p>
+          </div>
+        </div>
+        <div class="main_info">
+          <div class="position_text">
+            <span>Имя : &nbsp; </span>
+            <p id="block_name"></p>
+          </div>
+          <div class="position_text">
+            <span>Фамилия : &nbsp; </span>
+            <p id="block_surname"></p>
+          </div>
+          <div class="position_text">
+            <span>E-mail адрес : &nbsp; </span>
+            <p id="block_email"></p>
+          </div> 
+          <div class="position_text">
+            <span>Номер телефона : &nbsp; </span>
+            <p id="block_tel"></p>
+          </div>
+          <div class="position_text">
+            <span>Дата рождения: &nbsp; </span>
+            <p id="block_date"></p>
+          </div>
+          <div class="position_text">
+            <span>О себе : &nbsp; </span>
+            <p id="block_aboutme"></p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="">
+        <div class="main_info">
+          <span>Education : &nbsp; </span>
+          <p id="block_university"></p>
+          <span id="block_yyAdd"></span>
+          <span id="block_yyEnd"></span>
+          <p id="block_faculty"></p>
+          <p id="block_academicDegree"></p>
+        </div>
+        
 
-      <p id="block">
+        
 
-        <p id="block_name"> </p>
-        <p id="block_surname"></p>
-        <p id="block_email"></p>
-        <p id="block_tel"></p>
-        <p id="block_position"></p>
-        <p id="block_date"></p>
-        <p id="block_aboutme"></p>
 
-      </p>
-   <div id='avatar_block'></div>
 
-    </div>
+      </div>
 
-    <div id="Label2" style='display: none;'>
-     Template 2
-     <p id="block2"> </p>
-     <div id='avatar_block2'></div>
+      <div id="Label2" style='display: none;'>
+       Template 2
+       <p id="block2"> </p>
+       <div id='avatar_block2'></div>
+     </div>
+
+     <div id="Label3" style='display: none;'>
+       Template 3
+       <p id="block3"> </p>
+       <div id='avatar_block3'></div>
+     </div>
+
+
    </div>
-
-   <div id="Label3" style='display: none;'>
-     Template 3
-     <p id="block3"> </p>
-     <div id='avatar_block3'></div>
-   </div>
-
-
+   <a href="javascript:genPDF()">Save</a>
  </div>
- <a href="javascript:genPDF()">Save</a>
-</div>
 
 </body>
 </html>

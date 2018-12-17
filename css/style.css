@@ -31,7 +31,7 @@ margin-top: 100px;
 }
 
 ::-webkit-calendar-picker-indicator {
-  color: transparent;
+  c0lor: transparent;
   opacity: 1;
   background: url(//www.gravatar.com/avatar/cbfaff96665b7567defe1b34a883db8b?s=16&d=identicon&r=PG) no-repeat center;
   background-size: contain;

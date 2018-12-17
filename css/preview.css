@@ -1,0 +1,16 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#avatar_block {
+ margin-left: 500px;
+}
+
+#sv {
+    height:877px;
+    width:720px;
+    border: 1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+}

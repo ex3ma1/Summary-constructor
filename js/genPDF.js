@@ -5,7 +5,7 @@ function genPDF() {
         onrendered: function(canvas) {
             var img =canvas.toDataURL("img/png");
             var doc = new jsPDF(); 
-            doc.addImage(img, 'JPEG',20,20);
+            doc.addImage(img, 'JPEG',10,10);
             doc.save("first.pdf"); 
         }
     });

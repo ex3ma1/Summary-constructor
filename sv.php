@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="css/form.css">
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/preview.css">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -34,7 +35,6 @@
     <button class="w3-bar-item w3-button z1" onclick="Tabs('work-exp')">Опыт работы</button>
     <button class="w3-bar-item w3-button z1" onclick="Tabs('achievement')">Достижения</button>
     <button class="w3-bar-item w3-button z1" onclick="Tabs('skills')">Навыки</button>
-    <button class="w3-bar-item w3-button z1" onclick="Tabs('language')">Языки</button>
     <button class="w3-bar-item w3-button z1" onclick="Tabs('previews')">Превью</button>
     <a class="w3-bar-item w3-button z1 z" href="logout.php" onclick="logout()">Log out</a>
 
@@ -284,32 +284,10 @@
 
 </div>
 
-<div id="language" class="w3-container Tab" style="display:none">
-  <h2>Навыки</h2>
-
-  <div style="display:block">
-
-    <div style="display:block;width: 100px">
-      <datalist id="tickmarks" style="display:flex">
-        <option value="0" label="Daun" style="margin-right:auto" ></option>
-        <option value="1" label="Sredniy"style="margin-right:auto"></option>
-        <option value="2" label="Bog"></option>
-
-
-
-        <input id ="slider" type="range" list="tickmarks" min="0" max="2" step="1" style="width: 100px; margin-bottom:30px" onchange="check()">
-      </datalist>
-    </div>
-
-  </div>
-  <div id="result" style="margin-top: 50px;width: 100px">
-  </div>
-</div>
 
 <div id="previews" class="w3-container Tab" style="display:none">
   <div id="sv">
     <div id="Label1" style='display: none;'>
-      <h2>Template 1</h2>
 
       <p id="block">
 
@@ -321,12 +299,8 @@
         <p id="block_date"></p>
         <p id="block_aboutme"></p>
 
-
-        
       </p>
-
-
-      <div id='avatar_block'></div>
+   <div id='avatar_block'></div>
 
     </div>
 

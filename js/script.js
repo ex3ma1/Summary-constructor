@@ -4,6 +4,22 @@
     });
 });
 
+ function check(){
+        var inpValue = document.getElementById('slider').value;
+        if(inpValue == 0){
+            console.log(inpValue);
+            document.getElementById('result').innerHTML="Daun";
+        }
+        if(inpValue == 1){
+            console.log(inpValue);
+            document.getElementById('result').innerHTML="Sredniy";
+        }
+        if(inpValue == 2){
+            console.log(inpValue);
+            document.getElementById('result').innerHTML="Bog";
+        }
+    }
+
 
 function logout(){
     localStorage.clear();
@@ -48,8 +64,7 @@ function logout(){
     var descr_achiev = document.getElementById("descr_achiev").value;
     var year_endd = document.getElementById("year_endd").value;
 
-
-    
+ 
     
     console.log('2');
 
@@ -59,8 +74,14 @@ function logout(){
     previewAva(template_id);
     console.log('3');
 
-    var block = document.getElementById(template_id).innerHTML=name+'<br>'+email+'<br>'+tel+'<br>'+date+'<br>'+position+'<br>'+aboutme+'<br>'+university+'<br>'+yyAdd+'<br>'+yyEnd+'<br>'+academicDegree+'<br>'+faculty+'<br>'+nameCompany+'<br>'+pos+'<br>'+department+'<br>'+month_start+'<br>'+year_start+'<br>'+month_end+'<br>'+year_end+'<br>'+duties+'<br>'+duties1+'<br>'+duties2+'<br>'+nameAchiev+'<br>'+descr_achiev+'<br>'+year_endd;   
-}
+    var block_name = document.getElementById(template_id+'_name').innerHTML=name;
+    var block_surname = document.getElementById(template_id+'_surname').innerHTML=surname;
+    var block_email = document.getElementById(template_id+'_email').innerHTML=email;
+    var block_tel = document.getElementById(template_id+'_tel').innerHTML=tel;
+    var block_position = document.getElementById(template_id+'_position').innerHTML=position;
+    var block_datepicker = document.getElementById(template_id+'_date').innerHTML=date;
+    var block_aboutme = document.getElementById(template_id+'_aboutme').innerHTML=aboutme;
+} 
 
 function previewAva(template_id){
     var checkAva = document.getElementById("ava");

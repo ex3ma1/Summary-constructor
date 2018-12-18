@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<head>
 <title>Summary-constructor</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
@@ -25,7 +26,7 @@
 <script src="js/addSkills.js"></script>
 <script src="js/addLang.js"></script>
 
-
+</head>
 
 
 
@@ -41,8 +42,6 @@
     <button class="w3-bar-item w3-button z1" onclick="Tabs('skills')">Навыки</button>
     <button class="w3-bar-item w3-button z1" onclick="Tabs('previews')">Превью</button>
     <a class="w3-bar-item w3-button z1 z" href="logout.php" onclick="logout()">Log out</a>
-
-
   </div>
 
   <div id="template" class="w3-container Tab" >
@@ -138,7 +137,7 @@
       <div class="form-group col-md-6">
         <label for="academic-degree">Академ.Степень:</label>
         <select class="form-control " id="academic-degree" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;">
-          <option value=""></option>  
+          <option value="">Choose</option>  
           <option>Бакалавриат</option>
           <option>Магистратура</option>
           <option>Специалитет</option>
@@ -173,7 +172,7 @@
       <div class="form-group col-md-6">
         <label for="month_start">Месяц начала:</label>
         <select class="form-control form-control-lg" id="month_start" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;">
-          <option value=""></option>  
+          <option value="">Choose</option>  
           <option>Июль</option>
           <option>Август</option>
           <option>Октябрь</option>
@@ -188,7 +187,7 @@
       <div class="form-group col-md-6">
         <label for="year_start">Год начала:</label>
         <select class="form-control form-control-lg" id="year_start" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;">
-          <option value=""></option>  
+          <option value="">Choose</option>  
           <option>2018</option>
           <option>2011</option>
           <option>2012</option>
@@ -205,7 +204,7 @@
       <div class="form-group col-md-6">
         <label for="month_end">Месяц окончания:</label>
         <select class="form-control form-control-lg" id="month_end" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;">
-          <option value=""></option>  
+          <option value="">Choose</option>  
           <option>Июль</option>
           <option>Август</option>
           <option>Сентябрь</option>
@@ -220,7 +219,7 @@
       <div class="form-group col-md-6">
         <label for="year_end">Год окончания:</label>
         <select class="form-control form-control-lg" id="year_end" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;">
-          <option value=""></option>  
+          <option value="">Choose</option>  
           <option>2018</option>
           <option>2017</option>
           <option>2016</option>
@@ -257,7 +256,7 @@
     </div>
     <label for="year_end">Год окончания:</label>
     <select class="custom-select" id="year_endd" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;">
-      <option value=""></option>  
+      <option value="">Choose</option>  
       <option value="2018">2018</option>
       <option value="2017">2017</option>
       <option value="2016">2016</option>
@@ -282,86 +281,78 @@
   <input type="button" value="Проверить" class="btn" onclick="show()">
 </div>
 
-    
-</div>
-
 <div id="skills" class="w3-container Tab" style="display:none">
-<h2>Навыки</h2>
-<div class="allSkills">
-<div class="skillsBlock" >
-<div id="myModal" class="modal">
-<!-- Modal content -->
-<div class="modal-content">
-  <span class="closeModal">&times;</span>
-  <p>Нихуя ты не знаешь</p>
-</div>
-</div>
+  <h2>Навыки</h2>
+  <div class="allSkills">
+    <div class="skillsBlock" >
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="closeModal">&times;</span>
+          <p>Нихуя ты не знаешь</p>
+        </div>
+      </div>
 
-<div id="skillsModal" class="modal">
-<!-- Modal content -->
-<div class="modal-content">
-  <span class="closeSkillsModal">&times;</span>
-  <p>Не пизди ты не такой скиловый</p>
-</div>
-</div>
+      <div id="skillsModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="closeSkillsModal">&times;</span>
+          <p>Не пизди ты не такой скиловый</p>
+        </div>
+      </div>
 
-  <div id="myDIV" class="header">
-                
-                <input type="text" id="myInput" placeholder="Enter skill">
-                <span onclick="newElement()" class="addBtn">Add</span>
-                </div>
-              
-              <ul id="myUL">
-                
-              </ul>
-  
-<input type="button" value="show Skills" onclick="showSkills()">
-<div id="nsb">
+      <div id="myDIV" class="header">
 
-</div>
-</div>
+        <input type="text" id="myInput" placeholder="Enter skill">
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
 
-<div class="lngBlock">
-  <div style="display:flex;">
-    <h2>Add languages</h2>
-    <input type="button" value="+" class="addLngBtn" onclick="newLng()">
+      <ul id="myUL">
+
+      </ul>
+
+      <input type="button" value="show Skills" onclick="showSkills()">
+      <div id="nsb">
+
+      </div>
     </div>
-    <div id="parent">
-    <div class="separateLng" id="Lang1">
 
-        <input type="text" class="form-control" id="lngInput ">
-        <div class="lng">
-                <datalist id="tickmarks" style="display:flex">
-                    <option value="0" label="A1" style="margin-right:auto" >
-                    <option value="1" label="A2" style="margin-right:auto">
-                    <option value="2" label="A3" style="margin-right:auto">
-                    <option value="3" label="B1" style="margin-right:auto">
-                    <option value="4" label="B2" style="margin-right:auto">
-                    <option value="5" label="C1" style="margin-right:auto">
-                    <option value="6" label="C2" >
-                    
-                    
-        
-        </div>
+    <div class="lngBlock">
+      <div style="display:flex;">
+        <h2>Add languages</h2>
+        <input type="button" value="+" class="addLngBtn" onclick="newLng()">
+      </div>
+      <div id="parent">
+        <div class="separateLng" id="Lang1">
 
-        <div>
-                    <input id ="slider " class="levelSlider"type="range" list="tickmarks" min="0" max="6" step="1" style="width: 400px; margin-bottom:30px" >
-                    </datalist>
-        </div>
+          <input type="text" class="form-control" id="lngInput">
+          <div class="lng">
+            <datalist id="tickmarks" style="display:flex">
+              <option value="0" label="A1" style="margin-right:auto" > </option>
+              <option value="1" label="A2" style="margin-right:auto"> </option>
+              <option value="2" label="A3" style="margin-right:auto"> </option>
+              <option value="3" label="B1" style="margin-right:auto"> </option>
+              <option value="4" label="B2" style="margin-right:auto"> </option>
+              <option value="5" label="C1" style="margin-right:auto"> </option>
+              <option value="6" label="C2" > </option>
+            </datalist>
+
+
+          </div>
+
+          <div>
+            <input id ="slider" class="levelSlider" type="range" list="tickmarks" min="0" max="6" step="1" style="width: 400px; margin-bottom:30px" >
+            
+          </div>
         </div> 
-
-
-        
-        
-        
 
       </div>
       <input type="button" value="showLNG" onclick="showLng()">
       <div id = "lngShowBlock"></div>
 
 
-</div>
-</div>
+    </div>
+  </div>
 
 </div>
 
@@ -372,8 +363,8 @@
 
 
 <div id="previews" class="w3-container Tab" style="display:none">
-    <div id="sv">
-            <div id="Label1" style='display: none;'>
+  <div id="sv">
+    <div id="Label1" style='display: none;'>
 
       <div class="position_main">
         <div class="avatar">
@@ -419,15 +410,15 @@
           <span id="block_yyEnd"></span>
           <p id="block_faculty"></p>
           <p id="block_academicDegree"></p>
-          
+
         </div>
 
-        
+
       </div>
       <div class ="bottom">
-      <hr>
+        <hr>
         <div class="skills">
-        
+
           <h3>Технологии</h3>
           <p id="tech">
 
@@ -439,161 +430,162 @@
           </p>
 
         </div>
+      </div>
+    </div>
+
+    <div id="Label2" style='display: none;'>
+
+      <div class="position_main">
+        <div class="avatar">
+          <div id='avatar_block2'></div>
+          <div class="position_text xx">
+            <p class="zf">Позиция:&nbsp; </p>
+            <p id="block2_position"></p>
+          </div>
         </div>
-            </div>
+        <div class="main_info">
+          <div class="position_text">
+            <span>Имя : &nbsp; </span>
+            <p id="block2_name"></p>
+          </div>
+          <div class="position_text">
+            <span>Фамилия : &nbsp; </span>
+            <p id="block2_surname"></p>
+          </div>
+          <div class="position_text">
+            <span>E-mail адрес : &nbsp; </span>
+            <p id="block2_email"></p>
+          </div> 
+          <div class="position_text">
+            <span>Номер телефона : &nbsp; </span>
+            <p id="block2_tel"></p>
+          </div>
+          <div class="position_text">
+            <span>Дата рождения: &nbsp; </span>
+            <p id="block2_date"></p>
+          </div>
+          <div class="position_text">
+            <span>О себе : &nbsp; </span>
+            <p id="block2_aboutme"></p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="">
+        <div class="main_info">
+          <span>Education : &nbsp; </span>
+          <p id="block2_university"></p>
+          <span id="block2_yyAdd"></span>
+          <span id="block2_yyEnd"></span>
+          <p id="block2_faculty"></p>
+          <p id="block2_academicDegree"></p>
+          
+        </div>
 
-            <div id="Label2" style='display: none;'>
+        
+      </div>
+      <div class ="bottom">
+        <hr>
+        <div class="skills">
 
-                    <div class="position_main">
-                      <div class="avatar">
-                        <div id='avatar_block2'></div>
-                        <div class="position_text xx">
-                          <p class="zf">Позиция:&nbsp; </p>
-                          <p id="block2_position"></p>
-                        </div>
-                      </div>
-                      <div class="main_info">
-                        <div class="position_text">
-                          <span>Имя : &nbsp; </span>
-                          <p id="block2_name"></p>
-                        </div>
-                        <div class="position_text">
-                          <span>Фамилия : &nbsp; </span>
-                          <p id="block2_surname"></p>
-                        </div>
-                        <div class="position_text">
-                          <span>E-mail адрес : &nbsp; </span>
-                          <p id="block2_email"></p>
-                        </div> 
-                        <div class="position_text">
-                          <span>Номер телефона : &nbsp; </span>
-                          <p id="block2_tel"></p>
-                        </div>
-                        <div class="position_text">
-                          <span>Дата рождения: &nbsp; </span>
-                          <p id="block2_date"></p>
-                        </div>
-                        <div class="position_text">
-                          <span>О себе : &nbsp; </span>
-                          <p id="block2_aboutme"></p>
-                        </div>
-                      </div>
-                    </div>
-                    <hr>
-                    <div class="">
-                      <div class="main_info">
-                        <span>Education : &nbsp; </span>
-                        <p id="block2_university"></p>
-                        <span id="block2_yyAdd"></span>
-                        <span id="block2_yyEnd"></span>
-                        <p id="block2_faculty"></p>
-                        <p id="block2_academicDegree"></p>
-                        
-                      </div>
-              
-                      
-                    </div>
-                    <div class ="bottom">
-                    <hr>
-                      <div class="skills">
-                      
-                        <h3>Технологии</h3>
-                        <p id="block2_tech">
-              
-                        </p>
-                        <h3>Языки</h3>
-                        <p id="block2_languages">
-              
-              
-                        </p>
-              
-                      </div>
-                      </div>
-            </div>
+          <h3>Технологии</h3>
+          <p id="block2_tech">
 
-            <div id="Label3" style='display: none;'>
+          </p>
+          <h3>Языки</h3>
+          <p id="block2_languages">
 
-                    <div class="position_main">
-                      <div class="avatar">
-                        <div id='avatar_block3'></div>
-                        <div class="position_text xx">
-                          <p class="zf">Позиция:&nbsp; </p>
-                          <p id="block3_position"></p>
-                        </div>
-                      </div>
-                      <div class="main_info">
-                        <div class="position_text">
-                          <span>Имя : &nbsp; </span>
-                          <p id="block3_name"></p>
-                        </div>
-                        <div class="position_text">
-                          <span>Фамилия : &nbsp; </span>
-                          <p id="block3_surname"></p>
-                        </div>
-                        <div class="position_text">
-                          <span>E-mail адрес : &nbsp; </span>
-                          <p id="block3_email"></p>
-                        </div> 
-                        <div class="position_text">
-                          <span>Номер телефона : &nbsp; </span>
-                          <p id="block3_tel"></p>
-                        </div>
-                        <div class="position_text">
-                          <span>Дата рождения: &nbsp; </span>
-                          <p id="block3_date"></p>
-                        </div>
-                        <div class="position_text">
-                          <span>О себе : &nbsp; </span>
-                          <p id="block3_aboutme"></p>
-                        </div>
-                      </div>
-                    </div>
-                    <hr>
-                    <div class="">
-                      <div class="main_info">
-                        <span>Education : &nbsp; </span>
-                        <p id="block3_university"></p>
-                        <span id="block3_yyAdd"></span>
-                        <span id="block3_yyEnd"></span>
-                        <p id="block3_faculty"></p>
-                        <p id="block3_academicDegree"></p>
-                        
-                      </div>
-              
-                      
-                    </div>
-                    <div class ="bottom">
-                    <hr>
-                      <div class="skills">
-                      
-                        <h3>Технологии</h3>
-                        <p id="block3_tech">
-              
-                        </p>
-                        <h3>Языки</h3>
-                        <p id="block3_languages">
-              
-              
-                        </p>
-              
-                      </div>
-                      </div>
-            </div>
 
+          </p>
+
+        </div>
+      </div>
     </div>
 
-    <div>
-        <a href="javascript:genPDF()">Save</a>
-    
+
+    <div id="Label3" style='display: none;'>
+
+      <div class="position_main">
+        <div class="avatar">
+          <div id='avatar_block3'></div>
+          <div class="position_text xx">
+            <p class="zf">Позиция:&nbsp; </p>
+            <p id="block3_position"></p>
+          </div>
+        </div>
+        <div class="main_info">
+          <div class="position_text">
+            <span>Имя : &nbsp; </span>
+            <p id="block3_name"></p>
+          </div>
+          <div class="position_text">
+            <span>Фамилия : &nbsp; </span>
+            <p id="block3_surname"></p>
+          </div>
+          <div class="position_text">
+            <span>E-mail адрес : &nbsp; </span>
+            <p id="block3_email"></p>
+          </div> 
+          <div class="position_text">
+            <span>Номер телефона : &nbsp; </span>
+            <p id="block3_tel"></p>
+          </div>
+          <div class="position_text">
+            <span>Дата рождения: &nbsp; </span>
+            <p id="block3_date"></p>
+          </div>
+          <div class="position_text">
+            <span>О себе : &nbsp; </span>
+            <p id="block3_aboutme"></p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="">
+        <div class="main_info">
+          <span>Education : &nbsp; </span>
+          <p id="block3_university"></p>
+          <span id="block3_yyAdd"></span>
+          <span id="block3_yyEnd"></span>
+          <p id="block3_faculty"></p>
+          <p id="block3_academicDegree"></p>
+          
+        </div>
+
+        
+      </div>
+      <div class ="bottom">
+        <hr>
+        <div class="skills">
+
+          <h3>Технологии</h3>
+          <p id="block3_tech">
+
+          </p>
+          <h3>Языки</h3>
+          <p id="block3_languages">
+
+
+          </p>
+
+        </div>
+      </div>
     </div>
 
-  
+  </div>
+
+  <div>
+    <a href="javascript:genPDF()">Save</a>
+
+  </div>
+
+
 
 </div>
 
 
 
-  
+
 
 
 

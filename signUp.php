@@ -1,19 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-<?php
-    require "db.php";
-    
-    $data = $_POST;
-    if(isset($data['do_signUp']))
-=======
 
   <head>
 
@@ -48,7 +34,6 @@
     
     $data = $_POST;
     if(isset($data['do_login']))
->>>>>>> landing-page
     {
         $errors = array();
         if(trim($data['login']) == '')
@@ -78,12 +63,17 @@
         if(R::count('users',"email= ? ", array($data['email']))> 0){
             $errors[] = 'User with such email already exist';
         }
-<<<<<<< HEAD
-
         if( empty($errors))
         {
-             $user = R::dispense('users');
-=======
+            $user = R::dispense('users');
+            $user->login = $data['login'];
+            $user->email = $data['email'];
+            $user->password = password_hash($data['password'],PASSWORD_DEFAULT);
+            R::store($user);
+            $_SESSION['logged_user'] = $user;
+           header('Location: sv.php');  
+        }
+         
         // if( empty($errors))
         // {
         //     $user = R::dispense('users');
@@ -137,55 +127,15 @@
           if( empty($errors))
         {
             $user = R::dispense('users');
->>>>>>> landing-page
             $user->login = $data['login'];
             $user->email = $data['email'];
             $user->password = password_hash($data['password'],PASSWORD_DEFAULT);
             R::store($user);
-<<<<<<< HEAD
-            echo '<div style="color:green;">New user is added</div><hr>';
-        } else{
-            echo '<div style="color:red;">'.array_shift($errors).'</div>';
-        }
-    }
-    ?>
-    <form action="signUp.php" method="POST">
-    <p>
-        <p>
-        Your login
-        <input type="text" name="login" value = "<?php echo @$data['login']; ?>">
-        </p>
-        <p>
-        Your email
-        <input type="email" name="email" value = "<?php echo @$data['email']; ?>">
-        </p>
-        <p>
-        Your password
-        <input type="password" name="password" value = "<?php echo @$data['password']; ?>">
-        </p>
-        <p>
-        Your password again
-        <input type="password" name="password2" value = "<?php echo @$data['password2']; ?>">
-        </p>
-        <p>
-        
-        <button type = "submit" name="do_signUp">Sign up</button>
-        </p>
-    
-    
-    </p>
-    
-    
-    </form>
-</body>
-</html>
-=======
-            
-            
-            
         } else{
             echo '<div style="color:white;">'.array_shift($errors).'</div>';
-        }?>
+        }
+        
+        ?>
           </div>
            <button class="signUp_btn" type="submit" name="do_login">ЗАРЕГЕСТРИРОВАТЬСЯ</button>
     </form>
@@ -210,4 +160,3 @@
   </body>
 
 </html>
->>>>>>> landing-page

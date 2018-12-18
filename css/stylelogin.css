@@ -13,6 +13,7 @@
 }
 input{
 	height: 36px;
+	color: white;
 	width: 250px;
 	margin: 5px;
 	padding-left:  16px; 
@@ -55,7 +56,8 @@ input{
     width: 170px;
     height: 30px;
     margin: 2px;
-    font-size:  0.7rem;
+	font-size:  0.7rem;
+	
     
   }
   .login_btn{

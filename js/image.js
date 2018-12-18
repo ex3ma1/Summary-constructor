@@ -1,10 +1,9 @@
-<<<<<<< HEAD
 
-var image = new Image();
-=======
->>>>>>> landing-page
+
 function previewFiles() {
-
+  removeAva()
+  var image = new Image();
+  console.log(image);
   var preview = document.querySelector('#preview');
   var files   = document.querySelector('input[type=file]').files;
 
@@ -15,16 +14,14 @@ function previewFiles() {
       var reader = new FileReader();
 
       reader.addEventListener("load", function () {
-<<<<<<< HEAD
         
-=======
-        var image = new Image();
->>>>>>> landing-page
         image.height = 100;
         image.title = file.name;
         image.src = this.result;
         image.id = 'ava';
         preview.appendChild( image );
+        document.getElementById('del').style.display='block';
+        
       }, false);
 
       reader.readAsDataURL(file);
@@ -36,7 +33,6 @@ function previewFiles() {
     [].forEach.call(files, readAndPreview);
   }
 
-<<<<<<< HEAD
 }
 
 function removeAva(){
@@ -46,10 +42,12 @@ function removeAva(){
   var elem = document.getElementById("ava");
   elem.parentNode.removeChild(elem);
     }
+  document.getElementById('del').style.display='none';
   localStorage.removeItem('ava');
+  
+
   delete image;
+ 
+
 
 }
-=======
-}
->>>>>>> landing-page

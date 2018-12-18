@@ -9,7 +9,7 @@
 }
 
 #sv {
-    height:877px;
+    height:1100px;
     width:720px;
     margin-left: auto;
     margin-right: auto;
@@ -40,4 +40,26 @@ font-weight: bold;
 }
 .xx {
 margin-top: 20px;
+}
+.skills{
+    position: absolute;
+    bottom: 0;
+    
+    display: flex;
+    width: 720px;
+}
+#tech{
+
+width: 100px;
+margin-right: auto;
+}
+#languages{
+    width: 200px;
+    margin-left: auto;
+
+}
+
+.bottom{
+    position: absolute;
+    bottom: 0;
 }

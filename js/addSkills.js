@@ -77,7 +77,7 @@ function newElement() {
 
 
 
-function showSkills(){
+function showSkills(template_id){
   var resultArr = [];
 
   for(var i = 0;i<=7;i++){
@@ -102,11 +102,17 @@ function showSkills(){
   for(var j = resultArr.length ;j>0;j--){
     console.log(resultArr);
     if(resultArr[j-1] != undefined){
-      console.log('no');
-      
-    res =res+'<br/>'+resultArr[j-1];
-    var show = document.getElementById('nsb').innerHTML=res;}
-    else{
+      if(res!=''){
+      res =res+', '+resultArr[j-1];
+      var show = document.getElementById(template_id+'_tech').innerHTML=res;
+
+      }else{
+      res =resultArr[j-1];
+      var show = document.getElementById('tech').innerHTML=res;
+
+      }
+      }
+      else{
       resultArr.splice(j-1,1);
       console.log('un');
     }

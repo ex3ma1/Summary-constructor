@@ -52,7 +52,7 @@ function newLng() {
 
 
 
-  function showLng(){
+  function showLng(template_id){
 
     var resultLngArr = [];
     for(var i = 1;i<=5;i++){
@@ -67,25 +67,21 @@ function newLng() {
     var level = document.getElementById('Lang'+i).getElementsByClassName('levelSlider')[0].value;
     // var level = document.getElementById('Lang'+i).getElementById('slider ').value;
     //console.log(language+":"+level);
-    resultLngArr[i-1]=language+":"+levels[level];
+    resultLngArr[i-1]=i + ". " + language+": "+levels[level];
     //console.log(resultLngArr);
     }
     resultLng = '';
-    for(var q = resultLngArr.length;q>=0;q--){
-      if(resultLngArr[q-1]!= undefined){
-      console.log(resultLngArr[q-1]);
-      resultLng = resultLng + resultLngArr[q-1] + '<br/>';
-      console.log(resultLng);} 
+    for(var q = 0;q<=resultLngArr.length-1;q++){
+      if(resultLngArr[q]!= undefined){
+      resultLng = resultLng + resultLngArr[q] + '<br/>';
+      
     }
-    console.log(resultLng);
+    
   }
-  var show = document.getElementById('lngShowBlock').innerHTML=resultLng;
+  var show = document.getElementById(template_id+'_languages').innerHTML=resultLng;
 
   }
 }
+  }
 
-  
-
-  
-  
   

@@ -4,21 +4,7 @@
     });
 });
 
- function check(){
-        var inpValue = document.getElementById('slider').value;
-        if(inpValue == 0){
-            console.log(inpValue);
-            document.getElementById('result').innerHTML="Daun";
-        }
-        if(inpValue == 1){
-            console.log(inpValue);
-            document.getElementById('result').innerHTML="Sredniy";
-        }
-        if(inpValue == 2){
-            console.log(inpValue);
-            document.getElementById('result').innerHTML="Bog";
-        }
-    }
+
 
 
 function logout(){
@@ -74,6 +60,9 @@ function logout(){
     previewAva(template_id);
     console.log('3');
 
+
+
+
     var block_name = document.getElementById(template_id+'_name').innerHTML=name;
     var block_surname = document.getElementById(template_id+'_surname').innerHTML=surname;
     var block_email = document.getElementById(template_id+'_email').innerHTML=email;
@@ -81,6 +70,8 @@ function logout(){
     var block_position = document.getElementById(template_id+'_position').innerHTML=position;
     var block_datepicker = document.getElementById(template_id+'_date').innerHTML=date;
     var block_aboutme = document.getElementById(template_id+'_aboutme').innerHTML=aboutme;
+    showLng(template_id);
+    showSkills(template_id);
 } 
 
 function previewAva(template_id){

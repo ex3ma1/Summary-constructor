@@ -9,7 +9,6 @@
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/preview.css">
-<link rel="stylesheet" href="css/skills.css">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -22,6 +21,7 @@
 <script src="js/openCity.js"></script>
 <script src="js/image.js"></script>
 <script src="js/range.js"></script>
+<link rel="stylesheet" href="css/skills.css">
 <script src="js/addSkills.js"></script>
 <script src="js/addLang.js"></script>
 
@@ -282,9 +282,7 @@
   <input type="button" value="Проверить" class="btn" onclick="show()">
 </div>
 
-    </select>
-  </form>
-  <input type="button" value="Проверить" class="btn" onclick="show()">
+    
 </div>
 
 <div id="skills" class="w3-container Tab" style="display:none">
@@ -377,44 +375,81 @@
 <div id="previews" class="w3-container Tab" style="display:none">
   <div id="sv">
     <div id="Label1" style='display: none;'>
+      <div class="position_main">
+        <div class="avatar">
+          <div id='avatar_block'></div>
+          <div class="position_text xx">
+            <p class="zf">Позиция:&nbsp; </p>
+            <p id="block_position"></p>
+          </div>
+        </div>
+        <div class="main_info">
+          <div class="position_text">
+            <span>Имя : &nbsp; </span>
+            <p id="block_name"></p>
+          </div>
+          <div class="position_text">
+            <span>Фамилия : &nbsp; </span>
+            <p id="block_surname"></p>
+          </div>
+          <div class="position_text">
+            <span>E-mail адрес : &nbsp; </span>
+            <p id="block_email"></p>
+          </div> 
+          <div class="position_text">
+            <span>Номер телефона : &nbsp; </span>
+            <p id="block_tel"></p>
+          </div>
+          <div class="position_text">
+            <span>Дата рождения: &nbsp; </span>
+            <p id="block_date"></p>
+          </div>
+          <div class="position_text">
+            <span>О себе : &nbsp; </span>
+            <p id="block_aboutme"></p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="">
+        <div class="main_info">
+          <span>Education : &nbsp; </span>
+          <p id="block_university"></p>
+          <span id="block_yyAdd"></span>
+          <span id="block_yyEnd"></span>
+          <p id="block_faculty"></p>
+          <p id="block_academicDegree"></p>
+        </div>
+        
 
-      <p id="block">
-      
+        
 
-        <p id="block_name"> </p>
-        <p id="block_surname"></p>
-        <p id="block_email"></p>
-        <p id="block_tel"></p>
-        <p id="block_position"></p>
-        <p id="block_date"></p>
-        <p id="block_aboutme"></p>
 
-      </p>
-   <div id='avatar_block'></div>
 
-    </div>
+      </div>
 
-    <div id="Label2" style='display: none;'>
-     Template 2
-     <p id="block2"> </p>
-     
+      <div id="Label2" style='display: none;'>
+       Template 2
+       <p id="block2"> </p>
+       <div id='avatar_block2'></div>
+     </div>
 
-     <div id='avatar_block2'></div>
+     <div id="Label3" style='display: none;'>
+       Template 3
+       <p id="block3"> </p>
+       <div id='avatar_block3'></div>
+     </div>
+
+
    </div>
-
-   <div id="Label3" style='display: none;'>
-     Template 3
-     <p id="block3"> </p>
-     
-
-
-     <div id='avatar_block3'></div>
-   </div>
-
-
+   
  </div>
- <a href="javascript:genPDF()">Save</a>
-</div>
+ <div>
+   <a href="javascript:genPDF()">Save</a></div>
+   
+ </div>
+ </div>
+
 
 </body>
 </html>

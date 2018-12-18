@@ -1,10 +1,10 @@
 .upload-btn-wrapper {
-   position: relative;
-  overflow: hidden;
-  display: inline-block;
+  position: relative;
+ overflow: hidden;
+ display: inline-block;
 }
 h2{
-  text-align: center;
+ text-align: center;
 }
 #raz {
 display: flex;
@@ -12,29 +12,29 @@ justify-content: space-around;
 margin-top: 100px;
 }
 
- .btn-1 {
-  border: 2px solid gray;
-  color: gray;
-  background-color: white;
-  padding: 8px 20px;
-  border-radius: 8px;
-  font-size: 20px;
-  font-weight: bold;
+.btn-1 {
+ border: 2px solid gray;
+ color: gray;
+ background-color: white;
+ padding: 8px 20px;
+ border-radius: 8px;
+ font-size: 20px;
+ font-weight: bold;
 } 
 
 .upload-btn-wrapper input[type=file] {
-  font-size: 100px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
+ font-size: 100px;
+ position: absolute;
+ left: 0;
+ top: 0;
+ opacity: 0;
 }
 
 ::-webkit-calendar-picker-indicator {
-  color: transparent;
-  opacity: 1;
-  background: url(//www.gravatar.com/avatar/cbfaff96665b7567defe1b34a883db8b?s=16&d=identicon&r=PG) no-repeat center;
-  background-size: contain;
+ c0lor: transparent;
+ opacity: 1;
+ background: url(//www.gravatar.com/avatar/cbfaff96665b7567defe1b34a883db8b?s=16&d=identicon&r=PG) no-repeat center;
+ background-size: contain;
 }
 
 .sv {
@@ -45,31 +45,31 @@ border: 2px;
 }
 
 .z {
-  float:right !important;
+ float:right !important;
 }
 .z1 {
-   padding: 20px !important;
+  padding: 20px !important;
 }
 .ui-datepickerr-calendar {
-   display: none;
+  display: none;
 }
 .ui-datepickerr-month {
-   display: none;
+  display: none;
 }
 .ui-datepickerr-next,.ui-datepickerr-prev {
-  display:none;
+ display:none;
 }
 
 .x {
-  width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+ width: 700px;
+ margin-left: auto;
+ margin-right: auto;
 }
 
 label {
-  font-weight: bold;
+ font-weight: bold;
 }
 
 .vv{
-  margin-top: 30px
+ margin-top: 30px
 }

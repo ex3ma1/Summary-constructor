@@ -89,7 +89,7 @@ function previewAva(template_id){
         var ava = document.getElementById("ava").src;
         var img = document.createElement("img");
         img.setAttribute("src", ava);
-        img.setAttribute("width", 200);
+        img.setAttribute("width", 175);
         img.setAttribute("height", 200);
         img.id = 'previewAva';
         console.log('avatar'+'_'+template_id);

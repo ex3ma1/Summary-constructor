@@ -3,14 +3,41 @@
 	padding: 0;
 }
 
-#avatar_block {
- margin-left: 500px;
+.avatar {
+ float:right;
+ margin-top:20px;
 }
 
 #sv {
     height:877px;
     width:720px;
-    border: 1px solid red;
     margin-left: auto;
     margin-right: auto;
+    
+}
+.position_main{
+	height: 260px;
+}
+
+.main_info {
+ float: left;
+ margin-top:20px;
+}
+
+.position_text {
+ display: flex;
+}
+
+.position_text span{
+font-weight: bold;
+width:150px;
+margin:7px 10px 7px 10px;
+padding:0px;
+}
+
+.zf {
+font-weight: bold;
+}
+.xx {
+margin-top: 20px;
 }

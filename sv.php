@@ -176,13 +176,13 @@
           <option value=""></option>  
           <option>Июль</option>
           <option>Август</option>
-          <option>Хуй во рту</option>
+          <option>Октябрь</option>
           <option>Июль</option>
           <option>Август</option>
-          <option>Хуй во рту</option>
+          <option>Солнцестояние</option>
           <option>Июль</option>
           <option>Август</option>
-          <option>Хуй во рту</option>
+          <option>Карусель</option>
         </select>
       </div>
       <div class="form-group col-md-6">

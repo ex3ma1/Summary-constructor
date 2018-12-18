@@ -108,7 +108,7 @@ function showSkills(template_id){
 
       }else{
       res =resultArr[j-1];
-      var show = document.getElementById('tech').innerHTML=res;
+      var show = document.getElementById(template_id+'_tech').innerHTML=res;
 
       }
       }

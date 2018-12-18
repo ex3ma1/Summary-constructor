@@ -365,7 +365,7 @@
 <div id="previews" class="w3-container Tab" style="display:none">
   <div id="sv">
     <div id="Label1" style='display: none;'>
-
+        <h1>1</h1>
       <div class="position_main">
         <div class="avatar">
           <div id='avatar_block'></div>
@@ -420,11 +420,11 @@
         <div class="skills">
 
           <h3>Технологии</h3>
-          <p id="tech">
+          <p id="block_tech">
 
           </p>
           <h3>Языки</h3>
-          <p id="languages">
+          <p id="block_languages">
 
 
           </p>
@@ -434,7 +434,7 @@
     </div>
 
     <div id="Label2" style='display: none;'>
-
+      <h2>2</h2>
       <div class="position_main">
         <div class="avatar">
           <div id='avatar_block2'></div>
@@ -504,7 +504,7 @@
 
 
     <div id="Label3" style='display: none;'>
-
+        <h3>3</h3>
       <div class="position_main">
         <div class="avatar">
           <div id='avatar_block3'></div>

@@ -282,6 +282,11 @@
   <input type="button" value="Проверить" class="btn" onclick="show()">
 </div>
 
+    </select>
+  </form>
+  <input type="button" value="Проверить" class="btn" onclick="show()">
+</div>
+
 <div id="skills" class="w3-container Tab" style="display:none">
 <h2>Навыки</h2>
 <div class="allSkills">

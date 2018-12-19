@@ -79,43 +79,48 @@ function newElement() {
 
 function showSkills(template_id){
   var resultArr = [];
-
-  for(var i = 0;i<=7;i++){
+  var checkDel = 7;
+  for(var i = 7;i>=0;i--){
+    
     var skill = document.getElementById('li'+i);
     if(skill !=null){
     var checkDisp = document.getElementById("li"+i).style.display;
       if(checkDisp =='block'){
         
       var skillName = document.getElementById('li'+i).innerText.slice(0,-1);
-      resultArr[i]=skillName;
-      console.log(resultArr);
+      resultArr[i]=(checkDel) + ". " + skillName;
+      
+      
       }
       else{
-        console.log('none');
-        resultArr.splice(i+1,1);
+        
+        resultArr.splice(i-1,1);
+        checkDel++;
         
 
       }
+      console.log(i+":"+checkDel);
     }
+    checkDel--;
+    
   }
+  
+
   var res = '';
-  for(var j = resultArr.length ;j>0;j--){
-    console.log(resultArr);
+  for(var j = 1 ;j<=resultArr.length;j++){
+    
     if(resultArr[j-1] != undefined){
-      if(res!=''){
-      res =res+', '+resultArr[j-1];
+      
+      res = res+resultArr[j-1] + '<br/>';
       var show = document.getElementById(template_id+'_tech').innerHTML=res;
 
-      }else{
-      res =resultArr[j-1];
-      var show = document.getElementById(template_id+'_tech').innerHTML=res;
-
-      }
-      }
-      else{
-      resultArr.splice(j-1,1);
-      console.log('un');
+      
     }
+    else{
+      resultArr.splice(j-1,1);
+     
+    }
+    
 
   }
  

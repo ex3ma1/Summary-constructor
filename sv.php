@@ -73,7 +73,7 @@
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="name">Имя:</label>
-          <input type="text" class="form-control" id="name">
+          <input type="text" class="form-control" id="name" maxlength="10">
         </div>
         <div class="form-group col-md-6">
           <label for="surname">Фамилия:</label>

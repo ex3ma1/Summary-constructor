@@ -35,31 +35,28 @@ margin:7px 10px 7px 10px;
 padding:0px;
 }
 
+.position_text p{
+width: auto;
+margin:7px 10px 7px 10px;
+padding:0px;
+}
+
 .zf {
 font-weight: bold;
 }
 .xx {
 margin-top: 20px;
 }
-.skills{
-    position: absolute;
-    bottom: 0;
-    
+
+.position_info-skills {
     display: flex;
-    width: 720px;
-}
-#tech{
-
-width: 100px;
-margin-right: auto;
-}
-#languages{
-    width: 200px;
-    margin-left: auto;
-
+    justify-content: space-between;
 }
 
-.bottom{
-    position: absolute;
-    bottom: 0;
+.edu_exp_ach {
+    width: auto;
+} 
+
+.skills {
+    padding-right: 100px;
 }

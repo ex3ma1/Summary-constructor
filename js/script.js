@@ -32,23 +32,18 @@ function logout(){
     var date = document.getElementById("datepicker").value;
     var aboutme = document.getElementById("aboutme").value;
     var university = document.getElementById("university").value;
-    var yyAdd = document.getElementById("yy-add").value;
-    var yyEnd = document.getElementById("yy-end").value;
-    var academicDegree = document.getElementById("academic-degree").value;
+    var yyAdd = document.getElementById("yyAdd").value;
+    var yyEnd = document.getElementById("yyEnd").value;
+    var academicDegree = document.getElementById("academicDegree").value;
     var faculty = document.getElementById("faculty").value;
     var nameCompany = document.getElementById("nameCompany").value;
-    var pos = document.getElementById("pos.").value;
+    var poss = document.getElementById("poss").value;
     var department = document.getElementById("department").value;
-    var month_start = document.getElementById("month_start").value;
-    var year_start = document.getElementById("year_start").value;
-    var month_end = document.getElementById("month_end").value;
-    var year_end = document.getElementById("year_end").value;
-    var duties = document.getElementById("duties").value;
-    var duties1 = document.getElementById("duties1").value;
-    var duties2 = document.getElementById("duties2").value;
+    var year_start = document.getElementById("yearStart").value;
+    var year_end = document.getElementById("yearEnd").value;
     var nameAchiev = document.getElementById("nameAchiev").value;
-    var descr_achiev = document.getElementById("descr_achiev").value;
-    var year_endd = document.getElementById("year_endd").value;
+    var descrAchiev = document.getElementById("descrAchiev").value;
+    var yearAchiev = document.getElementById("yearAchiev").value;
 
  
     
@@ -70,6 +65,22 @@ function logout(){
     var block_position = document.getElementById(template_id+'_position').innerHTML=position;
     var block_datepicker = document.getElementById(template_id+'_date').innerHTML=date;
     var block_aboutme = document.getElementById(template_id+'_aboutme').innerHTML=aboutme;
+    var block_university = document.getElementById(template_id+'_university').innerHTML=university;
+    var block_yyAdd = document.getElementById(template_id+'_yyAdd').innerHTML=yyAdd;
+    var block_yyEnd = document.getElementById(template_id+'_yyEnd').innerHTML=yyEnd;
+    var block_academicDegree = document.getElementById(template_id+'_academicDegree').innerHTML=academicDegree;
+    var block_faculty = document.getElementById(template_id+'_faculty').innerHTML=faculty;
+    var block_nameCompany = document.getElementById(template_id+'_nameCompany').innerHTML=nameCompany;
+    var block_poss = document.getElementById(template_id+'_poss').innerHTML=poss;
+    var block_department = document.getElementById(template_id+'_department').innerHTML=department;
+    var block_year_start = document.getElementById(template_id+'_yearStart').innerHTML=year_start;
+    var block_year_end = document.getElementById(template_id+'_yearEnd').innerHTML=year_end;
+    var block_nameAchiev = document.getElementById(template_id+'_nameAchiev').innerHTML=nameAchiev;
+    var block_descrAchiev = document.getElementById(template_id+'_descrAchiev').innerHTML=descrAchiev;
+    var block_yearAchiev = document.getElementById(template_id+'_yearAchiev').innerHTML=yearAchiev;
+
+
+
     showLng(template_id);
     showSkills(template_id);
 } 

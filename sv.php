@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/preview.css">
+<link rel="stylesheet" href="css/skills.css">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -125,22 +126,22 @@
     </div>
     <div class="form-row">
       <div class="form-group col-md-6">
-        <label for="yy-add">Год поступления:</label>
-        <input id="yy-add" class="form-control" type="number" min="1950" max="2050" step="1" placeholder="Введите год поступления" />
+        <label for="yyAdd">Год поступления:</label>
+        <input id="yyAdd" class="form-control" type="number" min="1950" max="2050" step="1" placeholder="Введите год поступления" />
       </div>
       <div class="form-group col-md-6">
-        <label for="yy-end">Год окончания:</label>
-        <input id="yy-end" class="form-control" type="number" min="1950" max="2099" step="1" placeholder="Введите год окончания" />
+        <label for="yyEnd">Год окончания:</label>
+        <input id="yyEnd" class="form-control" type="number" min="1950" max="2099" step="1" placeholder="Введите год окончания" />
       </div>
     </div>
     <div class="form-row">
       <div class="form-group col-md-6">
-        <label for="academic-degree">Академ.Степень:</label>
-        <select class="form-control " id="academic-degree" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;">
-          <option value="">Choose</option>  
-          <option>Бакалавриат</option>
-          <option>Магистратура</option>
-          <option>Специалитет</option>
+        <label for="academicDegree">Академ.Степень:</label>
+        <select class="form-control " id="academicDegree" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;">
+          <option value=""></option>  
+          <option value="Бакалавр">Бакалавриат</option>
+          <option value="Магистр">Магистратура</option>
+          <option value="Специалист">Специалитет</option>
         </select>
       </div>
       <div class="form-group col-md-6">
@@ -160,8 +161,8 @@
     </div>
     <div class="form-row">
       <div class="form-group col-md-6">
-        <label for="pos.">Должность:</label>
-        <input type="text" class="form-control" id="pos.">
+        <label for="poss">Должность:</label>
+        <input type="text" class="form-control" id="poss">
       </div>
       <div class="form-group col-md-6">
         <label for="department">Отдел:</label>
@@ -170,24 +171,9 @@
     </div>
     <div class="form-row">
       <div class="form-group col-md-6">
-        <label for="month_start">Месяц начала:</label>
-        <select class="form-control form-control-lg" id="month_start" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;">
-          <option value="">Choose</option>  
-          <option>Июль</option>
-          <option>Август</option>
-          <option>Октябрь</option>
-          <option>Июль</option>
-          <option>Август</option>
-          <option>Солнцестояние</option>
-          <option>Июль</option>
-          <option>Август</option>
-          <option>Карусель</option>
-        </select>
-      </div>
-      <div class="form-group col-md-6">
-        <label for="year_start">Год начала:</label>
-        <select class="form-control form-control-lg" id="year_start" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;">
-          <option value="">Choose</option>  
+        <label for="yearStart">Год начала:</label>
+        <select class="form-control form-control-lg" id="yearStart" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;">
+          <option value=""></option>  
           <option>2018</option>
           <option>2011</option>
           <option>2012</option>
@@ -199,27 +185,10 @@
           <option>2232</option>
         </select>
       </div>
-    </div>
-    <div class="form-row">
       <div class="form-group col-md-6">
-        <label for="month_end">Месяц окончания:</label>
-        <select class="form-control form-control-lg" id="month_end" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;">
-          <option value="">Choose</option>  
-          <option>Июль</option>
-          <option>Август</option>
-          <option>Сентябрь</option>
-          <option>Июль</option>
-          <option>Август</option>
-          <option>Декабрь</option>
-          <option>Июль</option>
-          <option>Август</option>
-          <option>Январь</option>
-        </select>
-      </div>
-      <div class="form-group col-md-6">
-        <label for="year_end">Год окончания:</label>
-        <select class="form-control form-control-lg" id="year_end" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;">
-          <option value="">Choose</option>  
+        <label for="yearEnd">Год окончания:</label>
+        <select class="form-control form-control-lg" id="yearEnd" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;">
+          <option value=""></option>  
           <option>2018</option>
           <option>2017</option>
           <option>2016</option>
@@ -232,12 +201,12 @@
         </select>
       </div>
     </div>
-    <div class="form-group">
-      <label for="duties">Обязаности/Достижения:</label>
-      <input type="text" class="form-control" id="duties" placeholder="1."> <br>
-      <input type="text" class="form-control" id="duties1" placeholder="2."> <br>
-      <input type="text" class="form-control" id="duties2" placeholder="3."> <br>
-    </div>
+ <!--    <div class="form-group">
+   <label for="duties">Обязаности/Достижения:</label>
+   <input type="text" class="form-control" id="duties" placeholder="1."> <br>
+   <input type="text" class="form-control" id="duties1" placeholder="2."> <br>
+   <input type="text" class="form-control" id="duties2" placeholder="3."> <br>
+ </div> -->
   </form>
 
 </div>
@@ -247,16 +216,16 @@
   <h2>Ваши достижения</h2> <br>
   <form class="x">
     <div class="form-group">
-      <label for="nameCompany">Название награды / мероприятия / достижения:</label>
+      <label for="nameAchiev">Название награды / мероприятия / достижения:</label>
       <input type="text" class="form-control" id="nameAchiev">
     </div>
     <div class="form-group">
-      <label for="nameCompany">Описание:</label>
-      <input type="text" class="form-control" id="descr_achiev">
+      <label for="descrAchiev">Описание:</label>
+      <input type="text" class="form-control" id="descrAchiev">
     </div>
-    <label for="year_end">Год окончания:</label>
-    <select class="custom-select" id="year_endd" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;">
-      <option value="">Choose</option>  
+    <label for="yearAchiev">Год:</label>
+    <select class="custom-select" id="yearAchiev" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;">
+      <option value=""></option>  
       <option value="2018">2018</option>
       <option value="2017">2017</option>
       <option value="2016">2016</option>
@@ -311,10 +280,7 @@
 
       </ul>
 
-      <input type="button" value="show Skills" onclick="showSkills()">
-      <div id="nsb">
 
-      </div>
     </div>
 
     <div class="lngBlock">
@@ -347,8 +313,7 @@
         </div> 
 
       </div>
-      <input type="button" value="showLNG" onclick="showLng()">
-      <div id = "lngShowBlock"></div>
+
 
 
     </div>
@@ -402,36 +367,44 @@
         </div>
       </div>
       <hr>
-      <div class="">
-        <div class="main_info">
-          <span>Education : &nbsp; </span>
-          <p id="block_university"></p>
-          <span id="block_yyAdd"></span>
+      <div class="position_info-skills">
+        <div class="edu_exp_ach">
+          <span style="font-weight: bold">Образование : </span> <br>
+          <span id="block_yyAdd"></span> <span>&ndash;</span>
           <span id="block_yyEnd"></span>
-          <p id="block_faculty"></p>
-          <p id="block_academicDegree"></p>
+          <span id="block_university"></span> <br>
+          <span id="block_faculty"></span> <br>
+          <span id="block_academicDegree"></span>
+         <br> <br><br>
 
-        </div>
-
-
+     
+        <span style="font-weight: bold">Опыт работы : </span> <br>
+       <span id="block_yearStart"></span> <span>&ndash;</span>
+          <span id="block_yearEnd"></span>
+          <span>&nbsp;</span>
+          <span id="block_nameCompany"></span> <br>
+          <span style="font-weight: bold">Должность: </span>
+          <span id="block_poss"></span><br>
+          <span style="font-weight: bold">Отдел: </span>
+          <span id="block_department"></span><br>
+           <br><br><br>
+        <span style="font-weight: bold">Ваши достижения : </span> <br>
+          <span style="font-weight: bold">Название: </span>
+          <span id="block_nameAchiev"></span><br>
+          <span style="font-weight: bold">Описание: </span>
+          <span id="block_descrAchiev"></span><br>
+           <span style="font-weight: bold">Год: </span>
+          <span id="block_yearAchiev"></span><br>
       </div>
-      <div class ="bottom">
-        <hr>
-        <div class="skills">
 
-          <h3>Технологии</h3>
-          <p id="block_tech">
-
-          </p>
-          <h3>Языки</h3>
-          <p id="block_languages">
-
-
-          </p>
-
-        </div>
-      </div>
-    </div>
+     <div class="skills"> 
+       <h3>Технологии</h3>
+       <p id="block_tech"></p>
+       <h3>Языки</h3>
+       <p id="block_languages"></p>
+     </div>
+   </div>
+    
 
     <div id="Label2" style='display: none;'>
       <h2>2</h2>
@@ -485,7 +458,6 @@
         
       </div>
       <div class ="bottom">
-        <hr>
         <div class="skills">
 
           <h3>Технологии</h3>

@@ -404,16 +404,17 @@
        <p id="block_languages"></p>
      </div>
    </div>
+  </div>
     
 
     <div id="Label2" style='display: none;'>
-      <h2>2</h2>
+      <h1>2</h1>
       <div class="position_main">
         <div class="avatar">
           <div id='avatar_block2'></div>
           <div class="position_text xx">
             <p class="zf">Позиция:&nbsp; </p>
-            <p id="block2_position"></p>
+            <p id="block_position"></p>
           </div>
         </div>
         <div class="main_info">
@@ -444,39 +445,48 @@
         </div>
       </div>
       <hr>
-      <div class="">
-        <div class="main_info">
-          <span>Education : &nbsp; </span>
-          <p id="block2_university"></p>
-          <span id="block2_yyAdd"></span>
+      <div class="position_info-skills">
+        <div class="edu_exp_ach">
+          <span style="font-weight: bold">Образование : </span> <br>
+          <span id="block2_yyAdd"></span> <span>&ndash;</span>
           <span id="block2_yyEnd"></span>
-          <p id="block2_faculty"></p>
-          <p id="block2_academicDegree"></p>
-          
-        </div>
+          <span id="block2_university"></span> <br>
+          <span id="block2_faculty"></span> <br>
+          <span id="block2_academicDegree"></span>
+         <br> <br><br>
 
-        
+     
+        <span style="font-weight: bold">Опыт работы : </span> <br>
+       <span id="block2_yearStart"></span> <span>&ndash;</span>
+          <span id="block2_yearEnd"></span>
+          <span>&nbsp;</span>
+          <span id="block2_nameCompany"></span> <br>
+          <span style="font-weight: bold">Должность: </span>
+          <span id="block2_poss"></span><br>
+          <span style="font-weight: bold">Отдел: </span>
+          <span id="block2_department"></span><br>
+           <br><br><br>
+        <span style="font-weight: bold">Ваши достижения : </span> <br>
+          <span style="font-weight: bold">Название: </span>
+          <span id="block2_nameAchiev"></span><br>
+          <span style="font-weight: bold">Описание: </span>
+          <span id="block2_descrAchiev"></span><br>
+           <span style="font-weight: bold">Год: </span>
+          <span id="block2_yearAchiev"></span><br>
       </div>
-      <div class ="bottom">
-        <div class="skills">
 
-          <h3>Технологии</h3>
-          <p id="block2_tech">
-
-          </p>
-          <h3>Языки</h3>
-          <p id="block2_languages">
-
-
-          </p>
-
-        </div>
-      </div>
+     <div class="skills"> 
+       <h3>Технологии</h3>
+       <p id="block2_tech"></p>
+       <h3>Языки</h3>
+       <p id="block2_languages"></p>
+     </div>
+   </div>
     </div>
 
 
     <div id="Label3" style='display: none;'>
-        <h3>3</h3>
+      <h1>3</h1>
       <div class="position_main">
         <div class="avatar">
           <div id='avatar_block3'></div>
@@ -513,35 +523,43 @@
         </div>
       </div>
       <hr>
-      <div class="">
-        <div class="main_info">
-          <span>Education : &nbsp; </span>
-          <p id="block3_university"></p>
-          <span id="block3_yyAdd"></span>
+      <div class="position_info-skills">
+        <div class="edu_exp_ach">
+          <span style="font-weight: bold">Образование : </span> <br>
+          <span id="block3_yyAdd"></span> <span>&ndash;</span>
           <span id="block3_yyEnd"></span>
-          <p id="block3_faculty"></p>
-          <p id="block3_academicDegree"></p>
-          
-        </div>
+          <span id="block3_university"></span> <br>
+          <span id="block3_faculty"></span> <br>
+          <span id="block3_academicDegree"></span>
+         <br> <br><br>
 
-        
+     
+        <span style="font-weight: bold">Опыт работы : </span> <br>
+       <span id="block3_yearStart"></span> <span>&ndash;</span>
+          <span id="block3_yearEnd"></span>
+          <span>&nbsp;</span>
+          <span id="block3_nameCompany"></span> <br>
+          <span style="font-weight: bold">Должность: </span>
+          <span id="block3_poss"></span><br>
+          <span style="font-weight: bold">Отдел: </span>
+          <span id="block3_department"></span><br>
+           <br><br><br>
+        <span style="font-weight: bold">Ваши достижения : </span> <br>
+          <span style="font-weight: bold">Название: </span>
+          <span id="block3_nameAchiev"></span><br>
+          <span style="font-weight: bold">Описание: </span>
+          <span id="block3_descrAchiev"></span><br>
+           <span style="font-weight: bold">Год: </span>
+          <span id="block3_yearAchiev"></span><br>
       </div>
-      <div class ="bottom">
-        <hr>
-        <div class="skills">
 
-          <h3>Технологии</h3>
-          <p id="block3_tech">
-
-          </p>
-          <h3>Языки</h3>
-          <p id="block3_languages">
-
-
-          </p>
-
-        </div>
-      </div>
+     <div class="skills"> 
+       <h3>Технологии</h3>
+       <p id="block3_tech"></p>
+       <h3>Языки</h3>
+       <p id="block3_languages"></p>
+     </div>
+   </div>
     </div>
 
   </div>

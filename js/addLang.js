@@ -15,7 +15,10 @@ function newLng() {
     var clone = elem.cloneNode(true);
     clone.id = elemId;
     parent.appendChild(clone);
-
+    document.getElementById(elemId).querySelector('.form-control').value="";
+    document.getElementById(elemId).querySelector('.levelSlider').value=3;
+    
+    
     // var newInput = document.getElementById('lngInput');
     // var newInputId = document.getElementById('lngInput').id;
     // var inputId = newInputId.slice(0,-1)+inputCounter;

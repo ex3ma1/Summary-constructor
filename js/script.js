@@ -146,19 +146,70 @@ function selectTemplate() {
 
 
 function saveToLocalStorage(){
+    var name = document.getElementById("name").value;
+    localStorage.setItem('name', name);
+    var surname = document.getElementById("surname").value;
+    localStorage.setItem('surname', surname);
+    var email = document.getElementById("email").value;
+    localStorage.setItem('email', email);
+    var tel = document.getElementById("tel").value;
+    localStorage.setItem('tel', tel);
+    var position = document.getElementById("position").value;
+    localStorage.setItem('position', position);
+    //var date = document.getElementById("datepicker").value;
+    //localStorage.setItem('datepicker', datepicker);
+    var aboutme = document.getElementById("aboutme").value;
+    localStorage.setItem('aboutme', aboutme);
+    var university = document.getElementById("university").value;
+    localStorage.setItem('university', university);
+    var yyAdd = document.getElementById("yyAdd").value;
+    localStorage.setItem('yyAdd', yyAdd);
+    var yyEnd = document.getElementById("yyEnd").value;
+    localStorage.setItem('yyEnd', yyEnd);
+    var academicDegree = document.getElementById("academicDegree").value;
+    localStorage.setItem('academicDegree', academicDegree);
+    var faculty = document.getElementById("faculty").value;
+    localStorage.setItem('faculty', faculty);
+    var nameCompany = document.getElementById("nameCompany").value;
+    localStorage.setItem('nameCompany', nameCompany);
+    var poss = document.getElementById("poss").value;
+    localStorage.setItem('poss', poss);
+    var department = document.getElementById("department").value;
+    localStorage.setItem('department', department);
+    var year_start = document.getElementById("yearStart").value;
+    localStorage.setItem('yearStart', yearStart);
+    var year_end = document.getElementById("yearEnd").value;
+    localStorage.setItem('yearEnd', yearEnd);
+    var nameAchiev = document.getElementById("nameAchiev").value;
+    localStorage.setItem('nameAchiev', nameAchiev);
+    var descrAchiev = document.getElementById("descrAchiev").value;
+    localStorage.setItem('descrAchiev', descrAchiev);
+    var yearAchiev = document.getElementById("yearAchiev").value;
+    localStorage.setItem('yearAchiev', yearAchiev);
+    
 
-    var userName = document.getElementById('name').value;
-    localStorage.setItem('userName', userName);
+
     var checkAva = document.getElementById("ava");
     if(checkAva != null){
         var ava = document.getElementById("ava").src;
         localStorage.setItem('ava', ava);
     }
+
+    
 }
 
 function loadFromLocalStorage(){
 
-    var userNameStored = localStorage.getItem('userName');
+    //var userNameStored = localStorage.getItem('userName');
+    //document.getElementById('name').value = userNameStored;
+
+
+    var dataInLocalStorage = ['name','surname','email','tel','position','aboutme','university','yyAdd','yyEnd','academicDegree','faculty','nameCompany','poss','department','yearStart','yearEnd','nameAchiev','descrAchiev','yearAchiev'];
+    for(var i = 0; i<=dataInLocalStorage.length-1;i++){
+        document.getElementById(dataInLocalStorage[i]).value = localStorage.getItem(dataInLocalStorage[i]);
+        console.log(dataInLocalStorage[i]);
+        
+    }
     var avaStored = localStorage.getItem('ava');
     
     if(avaStored){
@@ -170,7 +221,7 @@ function loadFromLocalStorage(){
         img.id = "ava";
         document.getElementById('preview').appendChild(img);
     }
-    document.getElementById('name').value = userNameStored;
+    
     
 }
 

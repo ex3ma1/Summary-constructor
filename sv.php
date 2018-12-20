@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Summary-constructor</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="utf-8">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/form.css">
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="css/preview.css">
-<link rel="stylesheet" href="css/skills.css">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="js/genPDF.js" ></script>
-<script src="js/script.js"></script>
-<script src="js/jspdf.min.js" type="text/javascript"></script>
-<script src="js/html2canvas.js" type="text/javascript"></script>
-<script src="js/openCity.js"></script>
-<script src="js/image.js"></script>
-<script src="js/range.js"></script>
-<link rel="stylesheet" href="css/skills.css">
-<script src="js/addSkills.js"></script>
-<script src="js/addLang.js"></script>
+  <title>Summary-constructor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/preview.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/genPDF.js" ></script>
+  <script src="js/script.js"></script>
+  <script src="js/jspdf.min.js" type="text/javascript"></script>
+  <script src="js/html2canvas.js" type="text/javascript"></script>
+  <script src="js/openCity.js"></script>
+  <script src="js/image.js"></script>
+  <script src="js/range.js"></script>
+  <link rel="stylesheet" href="css/skills.css">
+  <script src="js/addSkills.js"></script>
+  <script src="js/addLang.js"></script>
+  <script src="js/validation.js"></script>
 
 </head>
 
@@ -69,34 +70,34 @@
 
   <div id="main-info" class="w3-container Tab" style="display:none"> <br>
     <h2>Базовая Информация</h2> <br>
-    <form class="x" >
+    <form class="was-validated x" >
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="name">Имя:</label>
-          <input type="text" class="form-control" id="name" maxlength="10">
+          <input type="text" class="form-control" id="name" maxlength="15" required>
         </div>
         <div class="form-group col-md-6">
           <label for="surname">Фамилия:</label>
-          <input type="text" class="form-control" id="surname">
+          <input type="text" class="form-control" id="surname" maxlength="20" required>
         </div>
       </div>
       <div class="form-group">
         <label for="email">Email:</label>
-        <input type="email" class="form-control" id="email" required="">
+        <input maxlength="30" type="email" class="form-control" id="email" required="">
       </div>
       <div class="form-group">
         <label for="tel">Телефон:</label>
-        <input type="tel" class="form-control" id="tel" required="">
+        <input type="tel" maxlength="30" class="form-control" id="tel" required="">
       </div>
       <div class="form-group">
         <label for="position">Желаемая должность:</label>
-        <input type="text" class="form-control" id="position">
+        <input type="text" class="form-control" id="position" maxlength="30" required>
       </div>
       <div class="form-row">
         <div class="col vv">
          <label for="browse" class="custom-file-label">Фотография: </label>
-         <input id="browse" type="file" onchange="previewFiles()"><br>
-
+         <input class="custom-file-input" id="browse" type="file" onchange="previewFiles()"required><br>
+         <div class="invalid-feedback">Example invalid custom file feedback</div>
          <div id="displayAva" style="display:flex;">
           <div id="preview" ></div>
           <input id="del" type="button" value='X' onclick="removeAva()" style="display:none;">
@@ -106,33 +107,36 @@
       </div>
       <div class="col">
        <label for="datepicker">Дата рождения: </label>
-       <input class="form-control" id="datepicker" type="text">
+       <input class="form-control" id="datepicker" type="text"required>
      </div>
    </div>
-</form>
+ </form>
 </div>
 
 <div id="education" class="w3-container Tab" style="display:none"> <br>
   <h2>Образование</h2> <br>
-  <form class="x">
+  <form class="was-validated x">
     <div class="form-group">
       <label for="university">Университет:</label>
-      <input type="text" class="form-control" id="university">
+      <input type="text" maxlength="60" class="form-control" id="university" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
     </div>
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="yyAdd">Год поступления:</label>
-        <input id="yyAdd" class="form-control" type="number" min="1950" max="2050" step="1" placeholder="Введите год поступления" />
+        <input id="yyAdd"  class="form-control" type="number" min="1950" max="2050" step="1" placeholder="Введите год поступления"  required>
       </div>
       <div class="form-group col-md-6">
         <label for="yyEnd">Год окончания:</label>
-        <input id="yyEnd" class="form-control" type="number" min="1950" max="2099" step="1" placeholder="Введите год окончания" />
+        <input id="yyEnd" class="form-control" type="number" min="1950" max="2099" step="1" placeholder="Введите год окончания" required>
       </div>
     </div>
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="academicDegree">Академ.Степень:</label>
-        <select class="form-control " id="academicDegree" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;">
+        <select class="form-control " id="academicDegree" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;"required>
           <option value=""></option>  
           <option value="Бакалавр">Бакалавриат</option>
           <option value="Магистр">Магистратура</option>
@@ -141,7 +145,7 @@
       </div>
       <div class="form-group col-md-6">
         <label for="faculty">Факультет:</label>
-        <input type="text" class="form-control" id="faculty">
+        <input type="text" maxlength="30" class="form-control" id="faculty" required>
       </div>
     </div>
   </form>
@@ -149,25 +153,25 @@
 
 <div id="work-exp" class="w3-container Tab" style="display:none"> <br>
   <h2>Опыт работы</h2>  <br>
-  <form class="x">
+  <form class="was-validated x">
     <div class="form-group">
       <label for="nameCompany">Название компании:</label>
-      <input type="text" class="form-control" id="nameCompany">
+      <input type="text" maxlength="50" class="form-control" id="nameCompany"required>
     </div>
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="poss">Должность:</label>
-        <input type="text" class="form-control" id="poss">
+        <input type="text" maxlength="30" class="form-control" id="poss"required>
       </div>
       <div class="form-group col-md-6">
         <label for="department">Отдел:</label>
-        <input type="text" class="form-control" id="department">
+        <input type="text" maxlength="30" class="form-control" id="department"required>
       </div>
     </div>
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="yearStart">Год начала:</label>
-        <select class="form-control form-control-lg" id="yearStart" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;">
+        <select class="form-control form-control-lg" id="yearStart" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;"required>
           <option value=""></option>  
           <option>2018</option>
           <option>2011</option>
@@ -182,7 +186,7 @@
       </div>
       <div class="form-group col-md-6">
         <label for="yearEnd">Год окончания:</label>
-        <select class="form-control form-control-lg" id="yearEnd" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;">
+        <select class="form-control form-control-lg" id="yearEnd" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;"required>
           <option value=""></option>  
           <option>2018</option>
           <option>2017</option>
@@ -202,24 +206,24 @@
    <input type="text" class="form-control" id="duties1" placeholder="2."> <br>
    <input type="text" class="form-control" id="duties2" placeholder="3."> <br>
  </div> -->
-  </form>
+</form>
 
 </div>
 
 
 <div id="achievement" class="w3-container Tab" style="display:none"> <br>
   <h2>Ваши достижения</h2> <br>
-  <form class="x">
+  <form class="was-validated x">
     <div class="form-group">
       <label for="nameAchiev">Название награды / мероприятия / достижения:</label>
-      <input type="text" class="form-control" id="nameAchiev">
+      <input type="text" maxlength="5ы0" class="form-control" id="nameAchiev"required>
     </div>
     <div class="form-group">
       <label for="descrAchiev">Описание:</label>
-      <input type="text" class="form-control" id="descrAchiev">
+      <input type="text" maxlength="70" class="form-control" id="descrAchiev"required>
     </div>
     <label for="yearAchiev">Год:</label>
-    <select class="custom-select" id="yearAchiev" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;">
+    <select class="custom-select" id="yearAchiev" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;"required>
       <option value=""></option>  
       <option value="2018">2018</option>
       <option value="2017">2017</option>
@@ -313,7 +317,7 @@
     </div>
   </div>
   <div class="posbtn">
-  <input style="font-weight: bold" type="button" value="Проверить" class="btn" onclick="show()">
+    <input style="font-weight: bold" type="button" value="Проверить" class="btn" onclick="show()">
   </div>
 </div>
 
@@ -326,12 +330,12 @@
 <div id="previews" class="w3-container Tab" style="display:none">
   <div id="sv">
     <div id="Label1" style='display: none;'>
-        <h1>1</h1>
+      <h1>1</h1>
       <div class="position_main">
         <div class="avatar">
           <div id='avatar_block'></div>
           <div class="position_text xx">
-            <p class="zf">Позиция:&nbsp; </p>
+            <p class="zf">Позиция:</p>
             <p id="block_position"></p>
           </div>
         </div>
@@ -367,11 +371,11 @@
           <span id="block_university"></span> <br>
           <span id="block_faculty"></span> <br>
           <span id="block_academicDegree"></span>
-         <br> <br><br>
+          <br> <br><br>
 
-     
-        <span style="font-weight: bold">Опыт работы : </span> <br>
-       <span id="block_yearStart"></span> <span>&ndash;</span>
+
+          <span style="font-weight: bold">Опыт работы : </span> <br>
+          <span id="block_yearStart"></span> <span>&ndash;</span>
           <span id="block_yearEnd"></span>
           <span>&nbsp;</span>
           <span id="block_nameCompany"></span> <br>
@@ -379,183 +383,183 @@
           <span id="block_poss"></span><br>
           <span style="font-weight: bold">Отдел: </span>
           <span id="block_department"></span><br>
-           <br><br><br>
-        <span style="font-weight: bold">Ваши достижения : </span> <br>
+          <br><br><br>
+          <span style="font-weight: bold">Ваши достижения : </span> <br>
           <span style="font-weight: bold">Название: </span>
           <span id="block_nameAchiev"></span><br>
           <span style="font-weight: bold">Описание: </span>
           <span id="block_descrAchiev"></span><br>
-           <span style="font-weight: bold">Год: </span>
+          <span style="font-weight: bold">Год: </span>
           <span id="block_yearAchiev"></span><br>
-      </div>
+        </div>
 
-     <div class="skills"> 
-       <h3>Технологии</h3>
-       <p id="block_tech"></p>
-       <h3>Языки</h3>
-       <p id="block_languages"></p>
+        <div class="skills"> 
+         <h3>Технологии</h3>
+         <p id="block_tech"></p>
+         <h3>Языки</h3>
+         <p id="block_languages"></p>
+       </div>
      </div>
    </div>
-  </div>
-    
 
-    <div id="Label2" style='display: none;'>
-      <h1>2</h1>
-      <div class="position_mainl2">
-        <div class="">
-          <div id='avatar_block2'></div>
-          <div class="position_text xx">
-            <p class="zf">Позиция:&nbsp; </p>
-            <p id="block2_position"></p>
-          </div>
-        </div>
-        <div class="">
-          <div class="position_text">
-            <span>Имя : &nbsp; </span>
-            <p id="block2_name"></p>
-          </div>
-          <div class="position_text">
-            <span>Фамилия : &nbsp; </span>
-            <p id="block2_surname"></p>
-          </div>
-          <div class="position_text">
-            <span>E-mail адрес : &nbsp; </span>
-            <p id="block2_email"></p>
-          </div> 
-          <div class="position_text">
-            <span>Номер телефона : &nbsp; </span>
-            <p id="block2_tel"></p>
-          </div>
-          <div class="position_text">
-            <span>Дата рождения: &nbsp; </span>
-            <p id="block2_date"></p>
-          </div>
+
+   <div id="Label2" style='display: none;'>
+    <h1>2</h1>
+    <div class="position_mainl2">
+      <div class="">
+        <div id='avatar_block2'></div>
+        <div class="position_text xx">
+          <p class="zf">Позиция:&nbsp; </p>
+          <p id="block2_position"></p>
         </div>
       </div>
-      <hr>
-      <div class="position_info-skillsl2">
-        <div class="edu_exp_achl2">
-          <span style="font-weight: bold">Образование : </span> <br>
-          <span id="block2_yyAdd"></span> <span>&ndash;</span>
-          <span id="block2_yyEnd"></span>
-          <span id="block2_university"></span> <br>
-          <span id="block2_faculty"></span> <br>
-          <span id="block2_academicDegree"></span>
-         <br> <br><br>
+      <div class="">
+        <div class="position_text">
+          <span>Имя : &nbsp; </span>
+          <p id="block2_name"></p>
+        </div>
+        <div class="position_text">
+          <span>Фамилия : &nbsp; </span>
+          <p id="block2_surname"></p>
+        </div>
+        <div class="position_text">
+          <span>E-mail адрес : &nbsp; </span>
+          <p id="block2_email"></p>
+        </div> 
+        <div class="position_text">
+          <span>Номер телефона : &nbsp; </span>
+          <p id="block2_tel"></p>
+        </div>
+        <div class="position_text">
+          <span>Дата рождения: &nbsp; </span>
+          <p id="block2_date"></p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="position_info-skillsl2">
+      <div class="edu_exp_achl2">
+        <span style="font-weight: bold">Образование : </span> <br>
+        <span id="block2_yyAdd"></span> <span>&ndash;</span>
+        <span id="block2_yyEnd"></span>
+        <span id="block2_university"></span> <br>
+        <span id="block2_faculty"></span> <br>
+        <span id="block2_academicDegree"></span>
+        <br> <br><br>
 
-     
+
         <span style="font-weight: bold">Опыт работы : </span> <br>
-       <span id="block2_yearStart"></span> <span>&ndash;</span>
-          <span id="block2_yearEnd"></span>
-          <span>&nbsp;</span>
-          <span id="block2_nameCompany"></span> <br>
-          <span style="font-weight: bold">Должность: </span>
-          <span id="block2_poss"></span><br>
-          <span style="font-weight: bold">Отдел: </span>
-          <span id="block2_department"></span><br>
-           <br><br><br>
+        <span id="block2_yearStart"></span> <span>&ndash;</span>
+        <span id="block2_yearEnd"></span>
+        <span>&nbsp;</span>
+        <span id="block2_nameCompany"></span> <br>
+        <span style="font-weight: bold">Должность: </span>
+        <span id="block2_poss"></span><br>
+        <span style="font-weight: bold">Отдел: </span>
+        <span id="block2_department"></span><br>
+        <br><br><br>
         <span style="font-weight: bold">Ваши достижения : </span> <br>
-          <span style="font-weight: bold">Название: </span>
-          <span id="block2_nameAchiev"></span><br>
-          <span style="font-weight: bold">Описание: </span>
-          <span id="block2_descrAchiev"></span><br>
-           <span style="font-weight: bold">Год: </span>
-          <span id="block2_yearAchiev"></span><br>
+        <span style="font-weight: bold">Название: </span>
+        <span id="block2_nameAchiev"></span><br>
+        <span style="font-weight: bold">Описание: </span>
+        <span id="block2_descrAchiev"></span><br>
+        <span style="font-weight: bold">Год: </span>
+        <span id="block2_yearAchiev"></span><br>
       </div>
 
-     <div class="skills"> 
+      <div class="skills"> 
        <h3>Технологии</h3>
        <p id="block2_tech"></p>
        <h3>Языки</h3>
        <p id="block2_languages"></p>
      </div>
    </div>
+ </div>
+
+
+ <div id="Label3" style='display: none;'>
+  <h1>3</h1>
+  <div class="position_main">
+    <div class="avatar">
+      <div id='avatar_block3'></div>
+      <div class="position_text xx">
+        <p class="zf">Позиция:&nbsp; </p>
+        <p id="block3_position"></p>
+      </div>
+    </div>
+    <div class="main_info">
+      <div class="position_text">
+        <span>Имя : &nbsp; </span>
+        <p id="block3_name"></p>
+      </div>
+      <div class="position_text">
+        <span>Фамилия : &nbsp; </span>
+        <p id="block3_surname"></p>
+      </div>
+      <div class="position_text">
+        <span>E-mail адрес : &nbsp; </span>
+        <p id="block3_email"></p>
+      </div> 
+      <div class="position_text">
+        <span>Номер телефона : &nbsp; </span>
+        <p id="block3_tel"></p>
+      </div>
+      <div class="position_text">
+        <span>Дата рождения: &nbsp; </span>
+        <p id="block3_date"></p>
+      </div>
+      <div class="position_text">
+        <span>О себе : &nbsp; </span>
+        <p id="block3_aboutme"></p>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="position_info-skills">
+    <div class="edu_exp_ach">
+      <span style="font-weight: bold">Образование : </span> <br>
+      <span id="block3_yyAdd"></span> <span>&ndash;</span>
+      <span id="block3_yyEnd"></span>
+      <span id="block3_university"></span> <br>
+      <span id="block3_faculty"></span> <br>
+      <span id="block3_academicDegree"></span>
+      <br> <br><br>
+
+
+      <span style="font-weight: bold">Опыт работы : </span> <br>
+      <span id="block3_yearStart"></span> <span>&ndash;</span>
+      <span id="block3_yearEnd"></span>
+      <span>&nbsp;</span>
+      <span id="block3_nameCompany"></span> <br>
+      <span style="font-weight: bold">Должность: </span>
+      <span id="block3_poss"></span><br>
+      <span style="font-weight: bold">Отдел: </span>
+      <span id="block3_department"></span><br>
+      <br><br><br>
+      <span style="font-weight: bold">Ваши достижения : </span> <br>
+      <span style="font-weight: bold">Название: </span>
+      <span id="block3_nameAchiev"></span><br>
+      <span style="font-weight: bold">Описание: </span>
+      <span id="block3_descrAchiev"></span><br>
+      <span style="font-weight: bold">Год: </span>
+      <span id="block3_yearAchiev"></span><br>
     </div>
 
-
-    <div id="Label3" style='display: none;'>
-      <h1>3</h1>
-      <div class="position_main">
-        <div class="avatar">
-          <div id='avatar_block3'></div>
-          <div class="position_text xx">
-            <p class="zf">Позиция:&nbsp; </p>
-            <p id="block3_position"></p>
-          </div>
-        </div>
-        <div class="main_info">
-          <div class="position_text">
-            <span>Имя : &nbsp; </span>
-            <p id="block3_name"></p>
-          </div>
-          <div class="position_text">
-            <span>Фамилия : &nbsp; </span>
-            <p id="block3_surname"></p>
-          </div>
-          <div class="position_text">
-            <span>E-mail адрес : &nbsp; </span>
-            <p id="block3_email"></p>
-          </div> 
-          <div class="position_text">
-            <span>Номер телефона : &nbsp; </span>
-            <p id="block3_tel"></p>
-          </div>
-          <div class="position_text">
-            <span>Дата рождения: &nbsp; </span>
-            <p id="block3_date"></p>
-          </div>
-          <div class="position_text">
-            <span>О себе : &nbsp; </span>
-            <p id="block3_aboutme"></p>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <div class="position_info-skills">
-        <div class="edu_exp_ach">
-          <span style="font-weight: bold">Образование : </span> <br>
-          <span id="block3_yyAdd"></span> <span>&ndash;</span>
-          <span id="block3_yyEnd"></span>
-          <span id="block3_university"></span> <br>
-          <span id="block3_faculty"></span> <br>
-          <span id="block3_academicDegree"></span>
-         <br> <br><br>
-
-     
-        <span style="font-weight: bold">Опыт работы : </span> <br>
-       <span id="block3_yearStart"></span> <span>&ndash;</span>
-          <span id="block3_yearEnd"></span>
-          <span>&nbsp;</span>
-          <span id="block3_nameCompany"></span> <br>
-          <span style="font-weight: bold">Должность: </span>
-          <span id="block3_poss"></span><br>
-          <span style="font-weight: bold">Отдел: </span>
-          <span id="block3_department"></span><br>
-           <br><br><br>
-        <span style="font-weight: bold">Ваши достижения : </span> <br>
-          <span style="font-weight: bold">Название: </span>
-          <span id="block3_nameAchiev"></span><br>
-          <span style="font-weight: bold">Описание: </span>
-          <span id="block3_descrAchiev"></span><br>
-           <span style="font-weight: bold">Год: </span>
-          <span id="block3_yearAchiev"></span><br>
-      </div>
-
-     <div class="skills"> 
-       <h3>Технологии</h3>
-       <p id="block3_tech"></p>
-       <h3>Языки</h3>
-       <p id="block3_languages"></p>
-     </div>
+    <div class="skills"> 
+     <h3>Технологии</h3>
+     <p id="block3_tech"></p>
+     <h3>Языки</h3>
+     <p id="block3_languages"></p>
    </div>
-    </div>
+ </div>
+</div>
 
-  </div>
+</div>
 
-  <div class="genPDF">
-    <a href="javascript:genPDF()">Save</a>
+<div class="genPDF">
+  <a href="javascript:genPDF()">Save</a>
 
-  </div>
+</div>
 
 
 

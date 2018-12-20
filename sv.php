@@ -47,22 +47,22 @@
   </div>
 
   <div id="template" class="w3-container Tab" >
-    <h2>Шаблон</h2>
+    <h2>Выберите шаблон Вашего резюме</h2>
     <div>
       <form id='raz'>
-        <div>
-          <input type="radio" checked name="raz" value="block"/> 
-          <div style="background: red; width:100px; height:100px"></div>  
-        </div>
-        
-        <div>
-          <input type="radio" checked name="raz" value="block2"/> 
-          <div style="background: black; width:100px; height:100px"></div>  
-        </div>
-        <div>
-          <input type="radio" checked name="raz" value="block3"/> 
-          <div style="background: green; width:100px; height:100px"></div>  
-        </div>
+        <label class="label">
+          <input class="radioBtn" type="radio" checked name="raz" value="block"/> 
+          <div class="template" style="background: url(img/1_template.png); width:300px; height:300px"></div>  
+       
+        </label>        
+        <label class="label">
+          <input  class="radioBtn" type="radio" checked name="raz" value="block2"/> 
+          <div  class="template" style="background: url(img/3_template.png); width:300px; height:300px"></div>  
+          </label>
+       <label class="label">
+          <input class="radioBtn" type="radio" checked name="raz" value="block3"/> 
+          <div class="template" style="background: url(img/2_template.png); width:300px; height:300px"></div>   
+          </label>
       </form>
     </div>
 
@@ -96,8 +96,8 @@
       <div class="form-row">
         <div class="col vv">
          <label for="browse" class="custom-file-label">Фотография: </label>
-         <input class="custom-file-input" id="browse" type="file" onchange="previewFiles()"required><br>
-         <div class="invalid-feedback">Example invalid custom file feedback</div>
+         <input class="custom-file-input" id="browse" type="file" onchange="previewFiles()" required><br>
+         <div class="invalid-feedback"></div>
          <div id="displayAva" style="display:flex;">
           <div id="preview" ></div>
           <input id="del" type="button" value='X' onclick="removeAva()" style="display:none;">
@@ -174,14 +174,14 @@
         <select class="form-control form-control-lg" id="yearStart" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;"required>
           <option value=""></option>  
           <option>2018</option>
-          <option>2011</option>
-          <option>2012</option>
-          <option>2013</option>
-          <option>2014</option>
+          <option>2017</option>
+          <option>2017</option>
           <option>2015</option>
-          <option>1994</option>
-          <option>111А</option>
-          <option>2232</option>
+          <option>2014</option>
+          <option>2013</option>
+          <option>2012</option>
+          <option>2011</option>
+          <option>2010</option>
         </select>
       </div>
       <div class="form-group col-md-6">
@@ -283,7 +283,7 @@
 
     <div class="lngBlock">
       <div style="display:flex;">
-        <h2>Add languages</h2>
+        <h2>Добьте языки</h2>
         <input type="button" value="+" class="addLngBtn" onclick="newLng()">
       </div>
       <div id="parent">

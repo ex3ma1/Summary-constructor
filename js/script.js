@@ -200,7 +200,7 @@ function loadFromLocalStorage(){
     //document.getElementById('name').value = userNameStored;
 
 
-    var dataInLocalStorage = ['name','surname','email','tel','position','aboutme','university','yyAdd','yyEnd','academicDegree','faculty','nameCompany','poss','department','yearStart','yearEnd','nameAchiev','descrAchiev','yearAchiev'];
+    var dataInLocalStorage = ['name','surname','email','tel','position','university','yyAdd','yyEnd','academicDegree','faculty','nameCompany','poss','department','yearStart','yearEnd','nameAchiev','descrAchiev','yearAchiev'];
     for(var i = 0; i<=dataInLocalStorage.length-1;i++){
         document.getElementById(dataInLocalStorage[i]).value = localStorage.getItem(dataInLocalStorage[i]);
         console.log(dataInLocalStorage[i]);

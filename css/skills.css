@@ -52,7 +52,7 @@
   
   /* Style the header */
   .header {
-    background-color: #b5becc;
+    background-color: #529DE1;
     padding: 30px 40px;
     color: white;
     text-align: center;
@@ -244,6 +244,10 @@
   float: right;
   font-size: 28px;
   font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0px 10px 10px 10px;
 }
 .closeSkillsModal,
 .closeSkillsModal,
@@ -252,4 +256,5 @@
   color: black;
   text-decoration: none;
   cursor: pointer;
+ 
 }

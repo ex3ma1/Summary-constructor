@@ -2,7 +2,7 @@
 
 
 var counter = 2;
-var k = 4;
+var k = 3;
 
 function newLng() {
     

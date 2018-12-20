@@ -65,7 +65,11 @@
           </label>
       </form>
     </div>
-
+    <div class="footer">
+    <a class="NextButton" onclick="Tabs('main-info')">
+        <span>дальше</span>
+    </a>
+    </div>
   </div>
 
   <div id="main-info" class="w3-container Tab" style="display:none"> <br>
@@ -111,6 +115,11 @@
      </div>
    </div>
  </form>
+ <div class="footer">
+    <a class="NextButton" onclick="Tabs('education')">
+        <span>дальше</span>
+    </a>
+    </div>
 </div>
 
 <div id="education" class="w3-container Tab" style="display:none"> <br>
@@ -149,6 +158,12 @@
       </div>
     </div>
   </form>
+  <div class="footer">
+    <a class="NextButton" onclick="Tabs('work-exp')">
+        <span>дальше</span>
+    </a>
+    </div>
+  
 </div>
 
 <div id="work-exp" class="w3-container Tab" style="display:none"> <br>
@@ -171,33 +186,11 @@
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="yearStart">Год начала:</label>
-        <select class="form-control form-control-lg" id="yearStart" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;"required>
-          <option value=""></option>  
-          <option>2018</option>
-          <option>2017</option>
-          <option>2017</option>
-          <option>2015</option>
-          <option>2014</option>
-          <option>2013</option>
-          <option>2012</option>
-          <option>2011</option>
-          <option>2010</option>
-        </select>
+        <input id="yearStart" class="form-control" type="number" min="1950" max="2099" step="1" placeholder="Введите год окончания" required>
       </div>
       <div class="form-group col-md-6">
         <label for="yearEnd">Год окончания:</label>
-        <select class="form-control form-control-lg" id="yearEnd" onmousedown="$(':first-child', this).remove(); this.onmousedown = null;"required>
-          <option value=""></option>  
-          <option>2018</option>
-          <option>2017</option>
-          <option>2016</option>
-          <option>2013</option>
-          <option>2014</option>
-          <option>2013</option>
-          <option>2012</option>
-          <option>2011</option>
-          <option>2010</option>
-        </select>
+        <input id="yearEnd" class="form-control" type="number" min="1950" max="2099" step="1" placeholder="Введите год окончания" required>
       </div>
     </div>
  <!--    <div class="form-group">
@@ -207,7 +200,11 @@
    <input type="text" class="form-control" id="duties2" placeholder="3."> <br>
  </div> -->
 </form>
-
+<div class="footer">
+    <a class="NextButton" onclick="Tabs('achievement')">
+        <span>дальше</span>
+    </a>
+    </div>
 </div>
 
 
@@ -246,6 +243,11 @@
 
     </select>
   </form>
+  <div class="footer">
+    <a class="NextButton" onclick="Tabs('skills')">
+        <span>дальше</span>
+    </a>
+    </div>
 </div>
 
 <div id="skills" class="w3-container Tab" style="display:none">
@@ -284,7 +286,8 @@
     <div class="lngBlock">
       <div style="display:flex;">
         <h2>Добьте языки</h2>
-        <input type="button" value="+" class="addLngBtn" onclick="newLng()">
+        <input type="button" value="┿" class="addLngBtn" onclick="newLng()">
+        
       </div>
       <div id="parent">
         <div class="separateLng" id="Lang1">
@@ -316,9 +319,11 @@
 
     </div>
   </div>
-  <div class="posbtn">
-    <input style="font-weight: bold" type="button" value="Проверить" class="btn" onclick="show()">
-  </div>
+  <div class="footer">
+    <a class="NextButton" onclick="show(); Tabs('previews')">
+        <span>дальше</span>
+    </a>
+    </div>
 </div>
 
 
@@ -330,7 +335,7 @@
 <div id="previews" class="w3-container Tab" style="display:none">
   <div id="sv">
     <div id="Label1" style='display: none;'>
-      <h1>1</h1>
+      
       <div class="position_main">
         <div class="avatar">
           <div id='avatar_block'></div>
@@ -404,7 +409,7 @@
 
 
    <div id="Label2" style='display: none;'>
-    <h1>2</h1>
+    
     <div class="position_mainl2">
       <div class="">
         <div id='avatar_block2'></div>
@@ -478,7 +483,7 @@
 
 
  <div id="Label3" style='display: none;'>
-  <h1>3</h1>
+  
   <div class="">
     <div class="position_text xx l3">
       <p class="zf">Позиция:</p>

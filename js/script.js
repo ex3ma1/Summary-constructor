@@ -172,9 +172,12 @@ function saveToLocalStorage(){
     localStorage.setItem('poss', poss);
     var department = document.getElementById("department").value;
     localStorage.setItem('department', department);
-    var year_start = document.getElementById("yearStart").value;
+    var yearStart = document.getElementById("yearStart").value;
+    console.log(yearStart);
     localStorage.setItem('yearStart', yearStart);
-    var year_end = document.getElementById("yearEnd").value;
+    var yearEnd = document.getElementById("yearEnd").value;
+    console.log(yearEnd);
+    
     localStorage.setItem('yearEnd', yearEnd);
     var nameAchiev = document.getElementById("nameAchiev").value;
     localStorage.setItem('nameAchiev', nameAchiev);

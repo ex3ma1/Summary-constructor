@@ -18,6 +18,10 @@
 .position_main{
 	height: 260px;
 }
+.position_mainl2{
+    height: 260px;
+    display: flex;
+}
 
 .main_info {
  float: left;
@@ -52,11 +56,22 @@ margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }
+.position_info-skillsl2 {
+    display: flex;
+    justify-content: space-between;
+    border-right:0.5px solid #bfc3fc
+}
+
+
 
 .edu_exp_ach {
     width: auto;
 } 
-
+.edu_exp_achl2 {
+    width: auto;
+    border-right:0.1px solid #edeeff;
+}
 .skills {
     padding-right: 100px;
 }
+

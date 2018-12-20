@@ -30,7 +30,6 @@ function logout(){
     var tel = document.getElementById("tel").value;
     var position = document.getElementById("position").value;
     var date = document.getElementById("datepicker").value;
-    var aboutme = document.getElementById("aboutme").value;
     var university = document.getElementById("university").value;
     var yyAdd = document.getElementById("yyAdd").value;
     var yyEnd = document.getElementById("yyEnd").value;
@@ -64,7 +63,6 @@ function logout(){
     var block_tel = document.getElementById(template_id+'_tel').innerHTML=tel;
     var block_position = document.getElementById(template_id+'_position').innerHTML=position;
     var block_datepicker = document.getElementById(template_id+'_date').innerHTML=date;
-    var block_aboutme = document.getElementById(template_id+'_aboutme').innerHTML=aboutme;
     var block_university = document.getElementById(template_id+'_university').innerHTML=university;
     var block_yyAdd = document.getElementById(template_id+'_yyAdd').innerHTML=yyAdd;
     var block_yyEnd = document.getElementById(template_id+'_yyEnd').innerHTML=yyEnd;
@@ -91,7 +89,7 @@ function previewAva(template_id){
         var ava = document.getElementById("ava").src;
         var img = document.createElement("img");
         img.setAttribute("src", ava);
-        img.setAttribute("width", 175);
+        img.setAttribute("width", 150);
         img.setAttribute("height", 200);
         img.id = 'previewAva';
         console.log('avatar'+'_'+template_id);
@@ -158,8 +156,6 @@ function saveToLocalStorage(){
     localStorage.setItem('position', position);
     //var date = document.getElementById("datepicker").value;
     //localStorage.setItem('datepicker', datepicker);
-    var aboutme = document.getElementById("aboutme").value;
-    localStorage.setItem('aboutme', aboutme);
     var university = document.getElementById("university").value;
     localStorage.setItem('university', university);
     var yyAdd = document.getElementById("yyAdd").value;

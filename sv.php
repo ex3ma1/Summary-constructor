@@ -35,7 +35,7 @@
 
 
   <div class="w3-bar w3-black">
-    <button class="w3-bar-item w3-button z1" onclick="Tabs('template')">Templates</button>
+    <button class="w3-bar-item w3-button z1" onclick="Tabs('template')">Шаблоны</button>
     <button class="w3-bar-item w3-button z1" onclick="Tabs('main-info')">Общая информация</button>
     <button class="w3-bar-item w3-button z1" onclick="Tabs('education')">Образование</button>
     <button class="w3-bar-item w3-button z1" onclick="Tabs('work-exp')">Опыт работы</button>
@@ -109,11 +109,6 @@
        <input class="form-control" id="datepicker" type="text">
      </div>
    </div>
-
-   <div class="form-group x">
-    <label for="aboutme">О себе:</label>
-    <textarea class="form-control" id="aboutme" rows="3"></textarea>
-  </div>
 </form>
 </div>
 
@@ -247,7 +242,6 @@
 
     </select>
   </form>
-  <input type="button" value="Проверить" class="btn" onclick="show()">
 </div>
 
 <div id="skills" class="w3-container Tab" style="display:none">
@@ -258,7 +252,7 @@
         <!-- Modal content -->
         <div class="modal-content">
           <span class="closeModal">&times;</span>
-          <p>Нихуя ты не знаешь</p>
+          <p>Ты не гений</p>
         </div>
       </div>
 
@@ -266,7 +260,7 @@
         <!-- Modal content -->
         <div class="modal-content">
           <span class="closeSkillsModal">&times;</span>
-          <p>Не пизди ты не такой скиловый</p>
+          <p>Ты не гений</p>
         </div>
       </div>
 
@@ -318,7 +312,9 @@
 
     </div>
   </div>
-
+  <div class="posbtn">
+  <input style="font-weight: bold" type="button" value="Проверить" class="btn" onclick="show()">
+  </div>
 </div>
 
 
@@ -359,10 +355,6 @@
           <div class="position_text">
             <span>Дата рождения: &nbsp; </span>
             <p id="block_date"></p>
-          </div>
-          <div class="position_text">
-            <span>О себе : &nbsp; </span>
-            <p id="block_aboutme"></p>
           </div>
         </div>
       </div>
@@ -409,15 +401,15 @@
 
     <div id="Label2" style='display: none;'>
       <h1>2</h1>
-      <div class="position_main">
-        <div class="avatar">
+      <div class="position_mainl2">
+        <div class="">
           <div id='avatar_block2'></div>
           <div class="position_text xx">
             <p class="zf">Позиция:&nbsp; </p>
-            <p id="block_position"></p>
+            <p id="block2_position"></p>
           </div>
         </div>
-        <div class="main_info">
+        <div class="">
           <div class="position_text">
             <span>Имя : &nbsp; </span>
             <p id="block2_name"></p>
@@ -438,15 +430,11 @@
             <span>Дата рождения: &nbsp; </span>
             <p id="block2_date"></p>
           </div>
-          <div class="position_text">
-            <span>О себе : &nbsp; </span>
-            <p id="block2_aboutme"></p>
-          </div>
         </div>
       </div>
       <hr>
-      <div class="position_info-skills">
-        <div class="edu_exp_ach">
+      <div class="position_info-skillsl2">
+        <div class="edu_exp_achl2">
           <span style="font-weight: bold">Образование : </span> <br>
           <span id="block2_yyAdd"></span> <span>&ndash;</span>
           <span id="block2_yyEnd"></span>
@@ -564,7 +552,7 @@
 
   </div>
 
-  <div>
+  <div class="genPDF">
     <a href="javascript:genPDF()">Save</a>
 
   </div>

@@ -479,14 +479,16 @@
 
  <div id="Label3" style='display: none;'>
   <h1>3</h1>
-  <div class="position_main">
-    <div class="avatar">
-      <div id='avatar_block3'></div>
-      <div class="position_text xx">
-        <p class="zf">Позиция:&nbsp; </p>
-        <p id="block3_position"></p>
-      </div>
+  <div class="">
+    <div class="position_text xx l3">
+      <p class="zf">Позиция:</p>
+      <p id="block3_position"></p>
     </div>
+    <div class="avatarl3">
+      <div id='avatar_block3'></div>
+    </div>
+    <hr>
+<div class="infoskills">
     <div class="main_info">
       <div class="position_text">
         <span>Имя : &nbsp; </span>
@@ -513,6 +515,15 @@
         <p id="block3_aboutme"></p>
       </div>
     </div>
+
+   <div class="skills"> 
+     <h3>Технологии</h3>
+     <p id="block3_tech"></p>
+     <h3>Языки</h3>
+     <p id="block3_languages"></p>
+   </div>
+</div>
+
   </div>
   <hr>
   <div class="position_info-skills">
@@ -524,6 +535,7 @@
       <span id="block3_faculty"></span> <br>
       <span id="block3_academicDegree"></span>
       <br> <br><br>
+      <hr>
 
 
       <span style="font-weight: bold">Опыт работы : </span> <br>
@@ -536,6 +548,7 @@
       <span style="font-weight: bold">Отдел: </span>
       <span id="block3_department"></span><br>
       <br><br><br>
+      <hr>
       <span style="font-weight: bold">Ваши достижения : </span> <br>
       <span style="font-weight: bold">Название: </span>
       <span id="block3_nameAchiev"></span><br>
@@ -543,14 +556,10 @@
       <span id="block3_descrAchiev"></span><br>
       <span style="font-weight: bold">Год: </span>
       <span id="block3_yearAchiev"></span><br>
+      <hr>
     </div>
 
-    <div class="skills"> 
-     <h3>Технологии</h3>
-     <p id="block3_tech"></p>
-     <h3>Языки</h3>
-     <p id="block3_languages"></p>
-   </div>
+ 
  </div>
 </div>
 

@@ -3,6 +3,12 @@
 	padding: 0;
 }
 
+.avatarl3 {
+   display: flex;
+   justify-content: center;
+}
+
+
 .avatar {
  float:right;
  margin-top:20px;
@@ -75,3 +81,12 @@ margin-top: 20px;
     padding-right: 100px;
 }
 
+.l3 {
+    display: flex;
+    justify-content: center;
+}
+
+.infoskills {
+    display: flex;
+     justify-content: space-between;
+}

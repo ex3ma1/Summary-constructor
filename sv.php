@@ -52,16 +52,16 @@
       <form id='raz'>
         <label class="label">
           <input class="radioBtn" type="radio" checked name="raz" value="block"/> 
-          <div class="template" style="background: url(img/1_template.png); width:300px; height:300px"></div>  
+          <div class="template" style="background: url(img/1_template.png); background-repeat: no-repeat; width:300px; height:300px"></div>  
        
         </label>        
         <label class="label">
           <input  class="radioBtn" type="radio" checked name="raz" value="block2"/> 
-          <div  class="template" style="background: url(img/3_template.png); width:300px; height:300px"></div>  
+          <div  class="template" style="background: url(img/3_template.png); background-repeat: no-repeat; width:300px; height:300px"></div>  
           </label>
        <label class="label">
           <input class="radioBtn" type="radio" checked name="raz" value="block3"/> 
-          <div class="template" style="background: url(img/2_template.png); width:300px; height:300px"></div>   
+          <div class="template" style="background: url(img/2_template.png);  width:300px; height:300px"></div>   
           </label>
       </form>
     </div>
@@ -78,7 +78,7 @@
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="name">Имя:</label>
-          <input type="text" class="form-control" id="name" maxlength="15" required>
+          <input type="text" class="form-control" id="name" name="name" maxlength="15" required>
         </div>
         <div class="form-group col-md-6">
           <label for="surname">Фамилия:</label>
@@ -91,7 +91,7 @@
       </div>
       <div class="form-group">
         <label for="tel">Телефон:</label>
-        <input type="tel" maxlength="30" class="form-control" id="tel" required="">
+        <input type="tel" class="form-control" id="tel" required="">
       </div>
       <div class="form-group">
         <label for="position">Желаемая должность:</label>
@@ -114,12 +114,13 @@
        <input class="form-control" id="datepicker" type="text"required>
      </div>
    </div>
- </form>
- <div class="footer">
-    <a class="NextButton" onclick="Tabs('education')">
+    <div class="footer">
+    <a type="submit" class="NextButton validateBtn" onclick="Tabs('education');">
         <span>дальше</span>
     </a>
     </div>
+ </form>
+
 </div>
 
 <div id="education" class="w3-container Tab" style="display:none"> <br>
